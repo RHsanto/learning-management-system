@@ -1,0 +1,30 @@
+.hero-section{
+  background-color:#255D52 ;
+  height: 800px;
+}
+
+.hero-img img{
+  width: 130%;
+  object-fit: cover;
+  margin-left: -200px;
+}
+.banner{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-info h1{
+font-weight: 900;
+font-size: 3.5em;
+}
+
+.banner-info span{
+  color: #FF6752;
+}
+
+.banner-info p{
+  margin: 30px 0px;
+  line-height: 30px;
+}
