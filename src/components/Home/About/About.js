@@ -22,11 +22,11 @@ const About = () => {
           </div>
           <div className="col-lg-4">
             <div className="about-info">
-              <p className='orange fw-bold'>About Our Courses</p>
+              <p className='sub-title fw-bold'>About Our Courses</p>
               <h2 className='fw-bold'>Explore Thousands of Creative Classes</h2>
               <p className='my-4 '><small>Dramatically supply transparent deliverables beforese backward comp internal
                or "organic" sources. Comp transparent leverage other. </small></p>
-               <button className='button'> Explore Courses</button>
+               <button className='global-btn'> Explore Courses</button>
             </div>
           </div>
         </div>

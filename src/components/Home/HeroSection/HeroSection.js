@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../../shared/Navbar/Navbar'
 import './Herosection.css'
-import Hero from '../../../image/sada-removebg-preview.png'
+import Hero from '../../../image/hero-women.png'
 const HeroSection = () => {
   return (
     <div className='hero-section'>
@@ -13,7 +13,7 @@ const HeroSection = () => {
           <h1>For Every Student,<br/> Every <span>Classroom</span>.</h1>
      <p><small>Dramatically supply transparent deliverable before backward <br/> comp internal 
             "organic" sources. Competently leverage other.</small></p>
-            <button className=" button">Explore Courses</button>
+            <button className=" global-btn">Explore Courses</button>
         </div>
         <div className="col-lg-4 hero-img">
           <img src={Hero} alt="" />

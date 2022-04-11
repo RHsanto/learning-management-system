@@ -93,9 +93,7 @@ font-size: 14px;
 .mb-menu li:hover{
   background-color: #d8d7d7
 }
-.e, .offer-info p{
-  color: #FF6752;
-}
+
 .learn{
   color:#32A6D2 ;
 }
@@ -110,19 +108,19 @@ font-size: 14px;
 .offer-section{
   background-color: #f6f7f6;
 }
-.l-card-Uicon{
-  font-size: 30px;
-  background-color: #FF6752;
-  color: white;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  list-style: none;
-  margin-bottom: 15px;
-}
+
 .icons{
   margin-left: 10px;
 }
+.l-card{
+  cursor: pointer;
+  box-shadow: 5px 2px 8px rgba(128, 128, 128, 0.308);
+}
+
+.l-card:hover{
+  box-shadow: 10px 5px 15px rgba(128, 128, 128, 0.836);
+}
+
 .l-card-icon{
   font-size: 30px;
   background-color: #255D52;
@@ -133,26 +131,29 @@ font-size: 14px;
   list-style: none;
   margin-bottom: 15px;
 }
-.l-card-licon{
-  font-size: 25px;
-  background-color: #255D52;
-  color: white;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  list-style: none;
-  margin-bottom: 15px;
-}
+
 .l-card-licon .icons{
   margin:0;
-  margin-left: 10px;
+  font-size: 24px;
+  text-align: center;
   padding-top: 5px;
 }
 
-.button{
-  background-color: #FF6752;
+.l-card:hover .l-card-icon{
+  background-color: #FF6752;}
+
+
+/* global button */
+.global-btn{
+  width: 150px;
   border: 0;
-  padding: 10px;
+  background-color: #FF6752;
   color: white;
-  border-radius: 3px;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+/* global sub-title */
+.sub-title{
+  color: #FF6752;
 }
