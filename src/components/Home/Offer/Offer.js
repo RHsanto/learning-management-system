@@ -2,7 +2,7 @@ import React from 'react';
 import { AiOutlineUser } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 import { MdOutlineDateRange } from "react-icons/md";
-import { TiLocationArrowOutline } from "react-icons/ti";
+import { FaRegPaperPlane } from "react-icons/fa";
 
 const Offer = () => {
   return (
@@ -15,7 +15,7 @@ const Offer = () => {
         </div>
          <div className="col-lg-3">
          <div className="l-card  p-4 rounded bg-light">
-         <li className='l-card-icon'> <p className='icons'><TiLocationArrowOutline /></p></li>
+         <li className='l-card-icon'> <p className='icons'><FaRegPaperPlane /></p></li>
          <h5 className='fw-bold'>Online Courses</h5>
          <p>Interactively provide access world class materials
             for unique catalysts for change my ocardinat.</p>
