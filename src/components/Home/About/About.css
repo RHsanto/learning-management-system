@@ -1,3 +1,45 @@
 .about-section{
   padding: 100px 0px;
 }
+
+.headphone img{
+ object-fit: cover;
+ width: 380px;
+ border-bottom-left-radius: 500px;
+ border-bottom-right-radius: 500px;
+ height: 500px;
+}
+
+.all-img{
+display: flex;
+position: relative;
+
+}
+.mid-women{
+  position: absolute;
+  right: 10%;
+  background-color: #30A5D2;
+  top: 10%;
+  border-top-left-radius: 500px;
+  border-top-right-radius: 500px;
+}
+
+.mid-women img{
+  width: 100%;
+  object-fit: cover;
+  
+}
+.little-women{
+  position: absolute;
+  right: 10%;
+  bottom: 15%;
+}
+.orange{
+  color:#FF6752 ;
+}
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

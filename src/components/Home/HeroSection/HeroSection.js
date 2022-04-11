@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../../shared/Navbar/Navbar'
 import './Herosection.css'
-import Hero from '../../../image/2.png'
+import Hero from '../../../image/hero.png'
 const HeroSection = () => {
   return (
     <div className='hero-section'>

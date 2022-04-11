@@ -4,9 +4,8 @@
 }
 
 .hero-img img{
-  width: 180%;
-  object-fit: cover;
-  margin-left: -200px;
+object-fit: cover;
+margin-left: -100px;
 }
 .banner{
   color: white;
