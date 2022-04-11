@@ -98,14 +98,15 @@ const Navbar = () => {
   </div>
   <div class="offcanvas-body"> 
   <div class="dropdown mb-3">
-         <button class=" logo">Categories <IoIosArrowDown/></button>
+         <button class="logo ">Categories <IoIosArrowDown/></button>
          <div class="dropdown-content">
            <a href="#">Category 1</a>
            <a href="#">Category 2</a>
            <a href="#">Category 3</a>
          </div>
-          </div>
+   </div>
  <div className="mb-menu">
+ 
  <li>Home</li>
  <li>Pages</li>
  <li>Instructor</li>

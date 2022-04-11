@@ -4,7 +4,7 @@
 }
 
 .hero-img img{
-  width: 130%;
+  width: 180%;
   object-fit: cover;
   margin-left: -200px;
 }
@@ -13,6 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
 }
 
 .banner-info h1{

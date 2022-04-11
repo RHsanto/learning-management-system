@@ -8,7 +8,7 @@ const Offer = () => {
   return (
     <div className='offer-section pb-5 pt-4'>
      <div className="container">
-       <div className="row py-5">
+       <div className="row py-5 g-4">
         <div className="text-center offer-info py-5">
         <p>What We Offer</p>
          <h2 className='fw-bold'>For Your Future Learning.</h2>
