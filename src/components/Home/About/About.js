@@ -14,10 +14,10 @@ const About = () => {
             alt="" />
            </div>
             <div className="mid-women">
-              <img src={MiddleImg} alt="" srcset="" />
+              <img src={MiddleImg} alt="" srcSet="" />
             </div>
             <div className="little-women">
-              <img src={LittleImg} alt="" srcset="" />
+              <img src={LittleImg} alt="" srcSet="" />
             </div>
           </div>
           <div className="col-lg-4">

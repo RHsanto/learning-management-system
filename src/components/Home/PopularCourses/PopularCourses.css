@@ -1,3 +1,6 @@
+.popular-courses{
+margin: 150px 0px;
+}
 .drop button{
 border: 0;
 padding: 10px;
@@ -24,7 +27,7 @@ border-radius: 5px;
   border-radius: 50%;
 }
 .p-card h6{
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .p-card .icon{
@@ -54,4 +57,14 @@ border-radius: 5px;
 }
 .dolar{
   padding-top: 5px;
+}
+
+.love{
+  position: absolute;
+  color: #FF6752;
+  right: 30px;
+  top: 10px;
+  background: white;
+  padding:6px 10px;
+  border-radius: 50%;
 }

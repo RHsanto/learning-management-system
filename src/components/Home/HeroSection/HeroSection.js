@@ -13,7 +13,7 @@ const HeroSection = () => {
           <h1>For Every Student,<br/> Every <span>Classroom</span>.</h1>
      <p><small>Dramatically supply transparent deliverable before backward <br/> comp internal 
             "organic" sources. Competently leverage other.</small></p>
-            <button class=" button">Explore Courses</button>
+            <button className=" button">Explore Courses</button>
         </div>
         <div className="col-lg-4 hero-img">
           <img src={Hero} alt="" />
