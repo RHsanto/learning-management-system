@@ -39,7 +39,7 @@ const PopularCourses = () => {
          </div>
          <div className="row row-cols-1 row-cols-md-3 g-4">
         {courses.map(data =>(
-  <div className="col" key={data?.id}>
+        <div className="col" key={data?.id}>
   <div className="card p-card">
     <img src={data?.img} alt="..."/>
      <div className="love">
@@ -80,12 +80,11 @@ const PopularCourses = () => {
       </div>
     </div>
   </div>
-    </div>
+          </div>
         ))}
-    
-</div>
-
-       </div>
+         <button className='all-courses mx-auto'>Browse All Courses</button>
+    </div>
+ </div>
      </div>
     </div>
   );
