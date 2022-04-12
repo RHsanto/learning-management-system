@@ -1,4 +1,6 @@
-
+.instructor-section{
+  position: relative;
+}
 .arrow div{
   background-color: #f1dfdb;
   font-size: 24px;
@@ -47,4 +49,25 @@
 .social-icon li:hover{
   background-color: #FF6752;
   color: white;
+}
+
+
+.slick-next:before {
+
+  background-color: #f7503a;
+  position: absolute;
+  margin-top: -300px;
+  width: 50px;
+  padding:15px 10px;
+  border-radius: 50%;
+  margin-left: -100px;
+}
+.slick-prev:before{
+  background-color: #f7503a;
+  position: absolute;
+  margin-top: -300px;
+  margin-left: 1150px;
+  width: 50px;
+  padding:15px 10px;
+  border-radius: 50%;
 }
