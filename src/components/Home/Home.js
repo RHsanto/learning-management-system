@@ -11,6 +11,8 @@ import Instructor from './Instructor/Instructor';
 import SuitableCourse from './SuitableCourse/SuitableCourse';
 import Reviews from './Reviews/Reviews';
 import LatestBlog from './LatestBlog/LatestBlog';
+import InsTWo from './Instructor/InsTwo';
+import MBReviews from './Reviews/MBReviews';
 const Home = () => {
   return (
     <div>
@@ -22,9 +24,21 @@ const Home = () => {
       <PopularCourses/>
       <Online/>
       <Counter/>
+      <div className='d-none d-md-block'>
       <Instructor/>
+      </div>
+      <div className='d-block d-md-none'>
+      <InsTWo/>
+      </div>
+      
       <SuitableCourse/>
+      <div className='d-none d-md-block'>
       <Reviews/>
+      </div>
+      <div className='d-block d-md-none'>
+      <MBReviews/>
+      </div>
+   
       <LatestBlog/>
       <Supporters/>
     </div>

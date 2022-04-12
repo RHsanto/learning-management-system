@@ -1,5 +1,5 @@
 import React from 'react';
-import './Instructor.css'
+
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
@@ -7,7 +7,7 @@ import { BsYoutube } from "react-icons/bs";
 import Slider from "react-slick";
 import { useState } from 'react';
 import { useEffect } from 'react';
-const Instructor = () => {
+const InsTWo = () => {
 
   const [instructors,setInstructors]=useState([])
   useEffect(()=>{
@@ -18,7 +18,7 @@ const Instructor = () => {
   var settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplaySpeed: 2000,
     pauseOnHover: true,
@@ -29,16 +29,14 @@ const Instructor = () => {
     <div className='instructor-section'>
       <div className="container">
         <div className="">
-        <div className="d-flex justify-content-between">
-           <div className="title">
-             <h1 className='fw-bold'>Our Expert Instructor</h1>
+        <div className="title">
+             <h2 className='fw-bold'>Our Expert Instructor</h2>
            </div>
   
-        </div>
         <div className='my-5 '>
         <Slider {...settings}>
           {instructors.map(data=>(
-  <div className='sliders '>  
+  <div className='sliders'>  
   <div className="ex-card ">
    <img src={data?.img} alt="img" />
    <h5>{data?.name}</h5>
@@ -63,4 +61,4 @@ const Instructor = () => {
   );
 };
 
-export default Instructor;
+export default InsTWo;

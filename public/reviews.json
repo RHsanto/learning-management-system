@@ -1,0 +1,45 @@
+[
+  {
+    "name":"Courtney Henry",
+    "img":"https://images.unsplash.com/photo-1480429370139-e0132c086e2a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "reviews":"Dramatically supply transparent  deliverables before & can backward comp internet or organic sources.",
+    "designation":"Sr. UX/UI Designer",
+    "ratings":"4.5"
+  },
+  {
+    "name":"Devon Lane",
+    "img":"https://images.unsplash.com/photo-1581599129568-e33151627628?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "reviews":"Dramatically supply transparent  deliverables before & can backward comp internet or organic sources.",
+    "designation":"Software Engineer",
+    "ratings":"4.7"
+  },
+  {
+    "name":"Jenny Wilson",
+    "img":"https://images.unsplash.com/photo-1591084728795-1149f32d9866?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fG1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "reviews":"Dramatically supply transparent  deliverables before & can backward comp internet or organic sources.",
+    "designation":"Content Writer",
+    "ratings":"4.8"
+  },
+  {
+    "name":"Jacinto Diego",
+    "img":"https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "reviews":"Dramatically supply transparent  deliverables before & can backward comp internet or organic sources.",
+    "designation":"Web Developer",
+    "ratings":"4.5"
+  },
+  {
+    "name":"Angle Jolly ",
+    "img":"https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjB8fHdvbWVuJTIwc21pbGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "reviews":"Dramatically supply transparent  deliverables before & can backward comp internet or organic sources.",
+    "designation":"Front-end Engineer",
+    "ratings":"4.5"
+  },
+  {
+    "name":"Courtney Henry",
+    "img":"https://images.unsplash.com/photo-1567515004624-219c11d31f2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fG1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "reviews":"Dramatically supply transparent  deliverables before & can backward comp internet or organic sources.",
+    "designation":"Sr. UX/UI Designer",
+    "ratings":"4.5"
+  }
+
+]

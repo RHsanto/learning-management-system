@@ -1,18 +1,7 @@
 .instructor-section{
   position: relative;
 }
-.arrow div{
-  background-color: #f1dfdb;
-  font-size: 24px;
-  padding: 0 10px;
-  padding-top: 3px;
-  border-radius: 50%;
-  color:#FF6752 ;
-}
-.arrow div:hover{
-  background-color: #FF6752;
-  color: #f1dfdb;
-}
+
 .ex-card{
   text-align: center;
   margin: 25px;
@@ -23,15 +12,18 @@
 }
 .ex-card img{
   padding: 15px;
-  border-radius: 15px;
+  border-radius: 20px;
   width: 100%;
-  height: 300px;
+  height: 350px;
   object-fit: cover;
+ object-position: top center;
  
 }
 .ex-card p{
   color: rgb(56, 117, 103);
   text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
 }
 .social-icon{
   position: absolute;
@@ -45,6 +37,7 @@
   padding:7px 10px;
   margin-top: 10px;
   border-radius: 50%;
+  cursor: pointer;
 }
 .social-icon li:hover{
   background-color: #FF6752;
@@ -53,10 +46,9 @@
 
 
 .slick-next:before {
-
   background-color: #f7503a;
   position: absolute;
-  margin-top: -300px;
+  margin-top: -333px;
   width: 50px;
   padding:15px 10px;
   border-radius: 50%;
@@ -65,9 +57,41 @@
 .slick-prev:before{
   background-color: #f7503a;
   position: absolute;
-  margin-top: -300px;
+  margin-top: -333px;
   margin-left: 1150px;
   width: 50px;
   padding:15px 10px;
   border-radius: 50%;
+}
+.sliders{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.social-icon{
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.sliders:hover .social-icon{
+  display: block;
+}
+.slick-dots {
+ display: none !important;
+}
+@media only screen and (min-width: 200PX) and (max-width: 600px) {
+
+  .slick-prev:before{
+    background-color: #f7503a;
+    position: absolute;
+    width: 50px;
+    margin-left:280px;
+    padding:15px 10px;
+    border-radius: 50%;
+
+  }
+  .slick-next:before {
+    margin-left: -60px;
+  }
 }
