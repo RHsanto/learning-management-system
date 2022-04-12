@@ -13,6 +13,7 @@ import Reviews from './Reviews/Reviews';
 import LatestBlog from './LatestBlog/LatestBlog';
 import InsTWo from './Instructor/InsTwo';
 import MBReviews from './Reviews/MBReviews';
+import Footer from '../shared/Footer/Footer';
 const Home = () => {
   return (
     <div>
@@ -41,6 +42,7 @@ const Home = () => {
    
       <LatestBlog/>
       <Supporters/>
+      <Footer/>
     </div>
   );
 };
