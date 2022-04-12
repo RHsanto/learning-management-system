@@ -1,3 +1,6 @@
+.latest-section{
+  margin: 100px 0;
+}
 .latest-text{
   font-size: 15px;
   padding: 5px 0px;
@@ -9,6 +12,6 @@
 }
 
 .blogs-title{
-  margin: 80px 0px 0px 0px;
+
   padding-bottom: 30px;
 }
