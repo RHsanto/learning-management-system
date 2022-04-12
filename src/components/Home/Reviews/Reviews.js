@@ -55,10 +55,7 @@ const Reviews = () => {
   <p>{data?.designation}</p>
 </div>
 </div>
-          ))}
-      
-       
-      
+))}
         </Slider>
       </div>
         </div>

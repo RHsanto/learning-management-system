@@ -1,19 +1,17 @@
 import React from 'react';
-
-import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
-import { BsYoutube } from "react-icons/bs";
+import { BsStarFill } from "react-icons/bs";
+import { BsStarHalf } from "react-icons/bs";
 import Slider from "react-slick";
 import { useState } from 'react';
 import { useEffect } from 'react';
-const InsTWo = () => {
+import './Reviews.css'
+const Reviews = () => {
 
-  const [instructors,setInstructors]=useState([])
+  const [reviews,setReviews]=useState([])
   useEffect(()=>{
-    fetch('./instructor.json')
+    fetch('./reviews.json')
     .then(res=>res.json())
-    .then(data=>setInstructors(data))
+    .then(data=>setReviews(data))
   },[])
   var settings = {
     dots: true,
@@ -26,33 +24,38 @@ const InsTWo = () => {
   };
   
   return (
-    <div className='instructor-section'>
+    <div className='instructor-section my-5'>
       <div className="container">
         <div className="">
-        <div className="title">
-             <h2 className='fw-bold'>Our Expert Instructor</h2>
+        <div className="d-flex justify-content-between">
+           <div className="title">
+             <h1 className='fw-bold'>4700+ Happy Students</h1>
            </div>
   
+        </div>
         <div className='my-5 '>
         <Slider {...settings}>
-          {instructors.map(data=>(
-  <div className='sliders'>  
-  <div className="ex-card ">
-   <img src={data?.img} alt="img" />
-   <h5>{data?.name}</h5>
-   <p>{data?.designation}</p>
-   <div className="social-icon">
-     <li><FaFacebookF/></li>
-     <li><FaTwitter/></li>
-     <li><AiFillInstagram/></li>
-     <li><BsYoutube/></li>
-   </div>
+          {reviews.map(data=>(
+  <div className="review-card mb-5">
+  <img src={data?.img} alt="" />
+  <div className="re-body  ">
+ <div className="d-flex justify-content-between">
+   <div></div>
+   <div className='re-icons me-2 '>
+     <ul className='d-flex gap-1 '>
+     <li><BsStarFill/></li>
+     <li><BsStarFill/></li>
+     <li><BsStarFill/></li>
+     <li><BsStarFill/></li>
+     <li><BsStarHalf/></li>
+   </ul></div>
  </div>
+    <p>{data?.reviews}</p>
+   <h5><b>{data?.name}</b> </h5>
+  <p>{data?.designation}</p>
 </div>
-          ))}
-      
-       
-      
+</div>
+))}
         </Slider>
       </div>
         </div>
@@ -61,4 +64,4 @@ const InsTWo = () => {
   );
 };
 
-export default InsTWo;
+export default Reviews;
