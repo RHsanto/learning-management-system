@@ -1,6 +1,7 @@
 import React from 'react';
 import './SuitableCourse.css'
-
+import learning from '../../../image/learning-2.png'
+import teaching from '../../../image/madam-3.png'
 
 const SuitableCourse = () => {
   return (
@@ -13,23 +14,28 @@ const SuitableCourse = () => {
        </div>
      <div className="row sui-banner g-4">
      <div className="col-lg-6">
-         <div className="d-flex sui-card">
+         <div className="d-flex sui-card shadow">
            <div className="sui-info">
-             <h4><b>Do You Want to <br /><span className='sub-title'> Learn </span>here?</b></h4>
-             <p>Dramatically supply transpa <br /> deliverables before & you.</p>
+             <h4><b>Do You Want to <span className='sub-title'> Learn </span>here?</b></h4>
+             <p>Dramatically supply transparent  deliverables before & you.</p>
              <button>Join Now</button>
            </div>
+           <div className="sui-img">
+           <img src={learning} alt="" />
+           </div>
          </div>
-         <div className="sui-img"></div>
+
        </div>
        <div className="col-lg-6">
-         <div className="d-flex sui-card">
-         <div className="sui-info">
-             <h4><b>Do You Want to <br /> <span className='sub-title'> Teach</span> here?</b></h4>
-             <p>Dramatically supply transpa <br /> deliverables before & you.</p>
+         <div className="d-flex sui-card shadow">
+          <div className="sui-info">
+             <h4><b>Do You Want to  <span className='sub-title'> Teach</span> here?</b></h4>
+             <p>Dramatically supply transparent deliverables before & you.</p>
              <button>Join Now</button>
           </div>
-          <div className="sui-img"></div>
+          <div className="sui-img">
+            <img src={teaching} alt="" />
+          </div>
          </div>
      
        </div>

@@ -20,10 +20,16 @@ line-height: 35px;
   background-color: #FF6752;;
 }
 .sui-banner{
-  margin: 100px 0px;
+  margin: 50px 0px;
 }
 .sui-card{
-  background-color: #b2d1eb;
+  background-color: #ffffff;
   padding: 30px;
   border-radius: 10px;
+
+}
+.sui-img img{
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
 }
