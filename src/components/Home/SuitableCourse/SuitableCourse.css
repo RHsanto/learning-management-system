@@ -1,4 +1,29 @@
 .SuitableCourse{
   margin: 100px 0px;
 }
-
+.sui-info h4{
+line-height: 35px;
+}
+.sui-info p{
+  font-size: 15px;
+}
+.sui-info button{
+  border: 0;
+  color: #FF6752;
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: #FFF7F5;
+}
+.sui-info button:hover{
+  color: white;
+  background-color: #FF6752;;
+}
+.sui-banner{
+  margin: 100px 0px;
+}
+.sui-card{
+  background-color: #b2d1eb;
+  padding: 30px;
+  border-radius: 10px;
+}
