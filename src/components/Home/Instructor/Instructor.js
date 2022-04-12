@@ -30,7 +30,7 @@ const Instructor = () => {
       <div className="container">
         <div className="">
         <div className="d-flex justify-content-between">
-           <div className="title">
+           <div className="ins-title">
              <h1 className='fw-bold'>Our Expert Instructor</h1>
            </div>
   

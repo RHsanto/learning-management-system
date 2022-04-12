@@ -24,11 +24,11 @@ const Reviews = () => {
   };
   
   return (
-    <div className='instructor-section my-5'>
+    <div className='reviews-section my-5'>
       <div className="container">
         <div className="">
         <div className="d-flex justify-content-between">
-           <div className="title">
+           <div className="re-title">
              <h1 className='fw-bold'>4700+ Happy Students</h1>
            </div>
   

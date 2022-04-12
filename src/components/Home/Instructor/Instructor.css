@@ -1,5 +1,6 @@
 .instructor-section{
   position: relative;
+
 }
 
 .ex-card{
@@ -48,7 +49,7 @@
 .slick-next:before {
   background-color: #f7503a;
   position: absolute;
-  margin-top: -333px;
+  margin-top: -300px;
   width: 50px;
   padding:15px 10px;
   border-radius: 50%;
@@ -57,7 +58,7 @@
 .slick-prev:before{
   background-color: #f7503a;
   position: absolute;
-  margin-top: -333px;
+  margin-top: -300px;
   margin-left: 1150px;
   width: 50px;
   padding:15px 10px;
@@ -80,6 +81,9 @@
 .slick-dots {
  display: none !important;
 }
+.ins-title{
+  margin-bottom: -40px;
+}
 @media only screen and (min-width: 200PX) and (max-width: 600px) {
 
   .slick-prev:before{
@@ -94,4 +98,6 @@
   .slick-next:before {
     margin-left: -60px;
   }
+
+ 
 }

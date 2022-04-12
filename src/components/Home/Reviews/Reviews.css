@@ -1,3 +1,7 @@
+.reviews-section{
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
 .review-card img{
   width: 130px;
   height: 130px;
@@ -21,4 +25,12 @@ color: orange;
 .re-body{
   margin:0 20px;
   box-shadow: 5px 2px 10px rgb(199, 199, 199);
+}
+
+@media only screen and (min-width: 200PX) and (max-width: 600px) {
+
+  .mb-title h1{
+   position: absolute;
+  font-size: 24px;
+  }
 }
