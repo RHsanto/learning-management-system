@@ -24,7 +24,7 @@ const Reviews = () => {
   };
   
   return (
-    <div className='instructor-section my-5'>
+    <div className='instructor-section my-5  mx-4'>
       <div className="container">
         <div className="">
         <div className="d-flex justify-content-between">

@@ -26,7 +26,7 @@ const InsTWo = () => {
   };
   
   return (
-    <div className='instructor-section'>
+    <div className='instructor-section mx-3'>
       <div className="container">
         <div className="">
         <div className="re-title">
@@ -36,19 +36,19 @@ const InsTWo = () => {
         <div className='my-5 '>
         <Slider {...settings}>
           {instructors.map(data=>(
-  <div className='sliders'>  
-  <div className="ex-card ">
-   <img src={data?.img} alt="img" />
-   <h5>{data?.name}</h5>
-   <p>{data?.designation}</p>
-   <div className="social-icon">
-     <li><FaFacebookF/></li>
-     <li><FaTwitter/></li>
-     <li><AiFillInstagram/></li>
-     <li><BsYoutube/></li>
-   </div>
- </div>
-</div>
+               <div className='sliders'>  
+               <div className="ex-card ">
+                <img src={data?.img} alt="img" />
+                <h5>{data?.name}</h5>
+                <p>{data?.designation}</p>
+                <div className="social-icon">
+                  <li><FaFacebookF/></li>
+                  <li><FaTwitter/></li>
+                  <li><AiFillInstagram/></li>
+                  <li><BsYoutube/></li>
+                </div>
+              </div>
+             </div>
           ))}
       
        

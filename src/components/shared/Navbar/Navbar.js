@@ -12,7 +12,7 @@ const Navbar = () => {
     <div>
      <div className="container text-light px-0">
      
-     <div className='d-none d-md-block'>
+     <div className='d-none d-lg-block'>
      <div className=" d-flex justify-content-between align-items-center py-3">
          <div >
          <div className="dropdown">
@@ -77,21 +77,24 @@ const Navbar = () => {
        </div>
      </div>
      {/* mobile device menu */}
-      <div className='d-block d-md-none fixed-top'>
+      <div className='d-block d-lg-none fixed-top'>
        <div className="d-flex justify-content-between align-items-center
         py-2 bg-light text-dark px-4">
-       <a className="text-dark" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+       <a className="text-dark" data-bs-toggle="offcanvas" 
+       href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
        <HiMenuAlt1 className='fs-1 '/>
-     </a>
-       <h2 className='pt-2'>  <span className='e'>E</span><span className="learn">-learning</span></h2>
+       </a>
+       <h2 className='pt-2'>  <span className='sub-title'>E</span>
+       <span className="learn">-learning</span></h2>
        <FaUserCircle className='fs-1 '/>
        </div>
 
 
-<div className="offcanvas offcanvas-start text-dark" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+<div className="offcanvas offcanvas-start text-dark"
+ tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
   <div className="offcanvas-header">
     <h3 className="offcanvas-title" id="offcanvasExampleLabel">
-      <span className='e'>E</span>
+      <span className='sub-title'>E</span>
       <span className="learn">-learning</span> </h3>
     <button type="button"
      className="btn-close text-reset"
@@ -108,11 +111,11 @@ const Navbar = () => {
  <li>Blogs</li>
 
  </div>
-  </div>
 </div>
-
-      </div>
-     </div>
+</div>
+</div>
+ </div>
+ 
     </div>
   );
 };

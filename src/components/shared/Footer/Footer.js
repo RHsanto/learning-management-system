@@ -7,7 +7,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   return (
     <div >
-      <footer>
+      <footer >
        <div className="container fot">
          <div className="row">
            <div className="col-lg-3">

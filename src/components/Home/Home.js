@@ -39,7 +39,6 @@ const Home = () => {
       <div className='d-block d-md-none'>
       <MBReviews/>
       </div>
-   
       <LatestBlog/>
       <Supporters/>
       <Footer/>

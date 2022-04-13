@@ -37,7 +37,7 @@ const PopularCourses = () => {
             </div>
            </div>
          </div>
-         <div className="row row-cols-1 row-cols-md-3 g-4 ep-card">
+         <div className="row row-cols-1 row-cols-md-3 g-4 ">
         {courses.map(data =>(
         <div className="col" key={data?.id}>
            <div className="card p-card shadow">
