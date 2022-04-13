@@ -99,5 +99,11 @@
     margin-left: -60px;
   }
 
- 
+  .our-keys{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin:70px 0px 100px 0px;
+    align-items: center;
+    gap: 30px;
+  }
 }
