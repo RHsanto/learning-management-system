@@ -97,14 +97,7 @@ const Navbar = () => {
       data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div className="offcanvas-body"> 
-  <div className="dropdown mb-3">
-         <button className="logo ">Categories <IoIosArrowDown/></button>
-         <div className="dropdown-content">
-           <a href="#">Category 1</a>
-           <a href="#">Category 2</a>
-           <a href="#">Category 3</a>
-         </div>
-   </div>
+
  <div className="mb-menu">
  
  <li>Home</li>
