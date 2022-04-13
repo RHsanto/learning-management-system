@@ -40,29 +40,27 @@
   font-family: 'Poppins', sans-serif;
  }
 
- 
+ /*===================== Mobile device=============================== */
   @media only screen and (min-width: 200PX) and (max-width: 600px) {
-/* header section */
-
+/*========== header section======= */
  .banner-info h1{
   font-size: 36px;
   }
-  
   .hero-img img{
     margin-left: 0px;
     width: 100%;
     margin-left: -20px;
-    }
+   }
     .text-1, .text-2, .text-3,.little-women, .mid-women{
     display: none; }
-  
+  /* =======About section====== */
     .headphone img{
     margin-left: 10px;
     margin-bottom: 50px;
     width: 100%; }
-
+    /* =====popular courses===== */
     .ep-card{ margin-left: 5px;}
-    
+    /* =======online learning section====== */
      .online{
       width:90%;
       padding-left: 0px;
@@ -85,7 +83,7 @@
       padding: 10px;
       border-radius: 5px;
     }
-
+/* React slick */
   .slick-prev:before{
     background-color: #f7503a;
     position: absolute;
@@ -105,6 +103,10 @@
     align-items: center;
     gap: 30px;
   }
+  .mb-title h1{
+    position: absolute;
+    font-size: 24px;
+    }
   .fot{
     text-align: center;
   }
@@ -116,7 +118,7 @@
   }
   }
  
-  /* tablet mode */
+  /* ================tablet mode=============== */
   @media only screen and (min-width: 601PX) and (max-width: 768px){
     .banner-info h1{
       font-size: 46px;
@@ -141,7 +143,11 @@
       align-items: center;
       gap: 30px;
     }
-
+    .review-card img{
+      width: 100px;
+      height: 100px;
+      margin-left: 10px;
+    }
     .fot-search button{
       margin-left: -55px;
     }
