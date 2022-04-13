@@ -59,8 +59,12 @@ const Footer = () => {
            </div>
          </div>
        </div>
-  
-     
+         <hr className='bg-light'/>
+          <div className="container">
+   <p className='text-end mb-0 py-4 text-light'>Copyright
+    &copy;Rakibul Hasan 2022, All Rights Reserved</p>
+            </div>  
+   
       </footer>
     </div>
   );
