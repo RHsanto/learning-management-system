@@ -1,4 +1,61 @@
 footer{
   background-color: #255D52;
-  height: 500px;
+
+}footer h5{
+  color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.fot{
+  padding: 100px 0px;
+}
+.fot-1, .fot-2, .fot-3, .fot-4{
+  padding: 30px;
+}
+footer  li{
+  list-style: none;
+  color: #B4C7C4;
+  font-size: 15px;
+  margin: 15px 0px ;
+}
+.fot-4 p{
+color: #B4C7C4;
+}
+.fot-icon li{
+margin-top: 15px;
+margin-left: 10px;
+  
+}
+.fot-4 input{
+  outline: none;
+  border: 0;
+  padding-left: 25px;
+  border-radius: 50px;
+}
+.fot-search{
+  background-color: white;
+  padding: 5px 0;
+  border-radius: 50px;
+  width: 350px;
+}
+.fot-search button{
+  border: 0;
+  border-radius: 50px;
+  font-size: 12px;
+  background-color: #FF6752;
+  color: white;
+  padding: 10px 14px;
+}
+
+.fot-icon li{
+  background-color: aliceblue;
+  padding:5px 10px;
+  font-size: larger;
+  color: #FF6752;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.fot-icon li:hover{
+  color:aliceblue ;
+  background-color:  #FF6752;
 }
