@@ -40,7 +40,7 @@ const PopularCourses = () => {
          <div className="row row-cols-1 row-cols-md-3 g-4">
         {courses.map(data =>(
         <div className="col" key={data?.id}>
-  <div className="card p-card">
+  <div className="card p-card shadow">
     <img src={data?.img} alt="..."/>
      <div className="love">
      <FaRegHeart/>

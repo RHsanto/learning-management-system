@@ -91,13 +91,14 @@ const Navbar = () => {
 <div className="offcanvas offcanvas-start text-dark" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
   <div className="offcanvas-header">
     <h3 className="offcanvas-title" id="offcanvasExampleLabel">
-      <span className='e'>E</span><span className="learn">-learning</span> </h3>
+      <span className='e'>E</span>
+      <span className="learn">-learning</span> </h3>
     <button type="button"
      className="btn-close text-reset"
       data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div className="offcanvas-body"> 
-
+ 
  <div className="mb-menu">
  
  <li>Home</li>
