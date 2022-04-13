@@ -37,7 +37,7 @@ const Navbar = () => {
            <div className="dropdown">
          <button className="dropBtn">Pages  <IoIosArrowDown/></button>
          <div className="dropdown-content">
-           <a href="#">Pages 1</a>
+         <Link to='/reviews'>Reviews</Link>
            <a href="#">Pages 2</a>
            <a href="#">Pages 3</a>
          </div>

@@ -145,13 +145,19 @@ font-size: 14px;
 
 /* global button */
 .global-btn{
+  background-image: -webkit-linear-gradient(30deg, #FF6752 50%, transparent 50%);
+  background-image: linear-gradient(30deg, #FF6752 50%, transparent 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
   width: 150px;
   border: 0;
-  background-color: #FF6752;
-  color: white;
   padding: 10px 0;
   border-radius: 5px;
 }
+
 
 /* global sub-title */
 .sub-title{

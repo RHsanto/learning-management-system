@@ -6,6 +6,30 @@ a{
   text-decoration: none;
   color: white;
 }
+/* hover css on button */
+.all-courses{
+  color: #fff;
+  background-image: -webkit-linear-gradient(30deg, #FF6752 50%, transparent 50%);
+  background-image: linear-gradient(30deg, #FF6752 50%, transparent 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  width: 200px;
+  border: 0;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+.all-courses:hover, .global-btn:hover {
+  background-position: 100%;
+  background-color: #f8e7e3;
+}
+.all-courses:hover a, .global-btn:hover a{
+  color: #f7503a;
+}
  /*===================== Mobile device=============================== */
   @media only screen and (min-width: 200PX) and (max-width: 600px) {
 /*========== header section======= */

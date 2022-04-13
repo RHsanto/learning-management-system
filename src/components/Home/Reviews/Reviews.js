@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BsStarFill } from "react-icons/bs";
 import { BsStarHalf } from "react-icons/bs";
 import Slider from "react-slick";
-import { useState } from 'react';
-import { useEffect } from 'react';
 import './Reviews.css'
 const Reviews = () => {
 
@@ -36,7 +34,7 @@ const Reviews = () => {
         <div className='my-5 '>
         <Slider {...settings}>
           {reviews.map(data=>(
-  <div className="review-card mb-5">
+         <div className="review-card mb-5">
   <img src={data?.img} alt="" />
   <div className="re-body  ">
  <div className="d-flex justify-content-between">
@@ -54,8 +52,8 @@ const Reviews = () => {
    <h5><b>{data?.name}</b> </h5>
   <p>{data?.designation}</p>
 </div>
-</div>
-))}
+         </div>
+           ))}
         </Slider>
       </div>
         </div>
