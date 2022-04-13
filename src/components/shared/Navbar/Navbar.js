@@ -79,7 +79,7 @@ const Navbar = () => {
      {/* mobile device menu */}
       <div className='d-block d-md-none fixed-top'>
        <div className="d-flex justify-content-between align-items-center
-        py-2 bg-light text-dark px-3">
+        py-2 bg-light text-dark px-4">
        <a className="text-dark" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
        <HiMenuAlt1 className='fs-1 '/>
      </a>

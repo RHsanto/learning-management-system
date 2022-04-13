@@ -1,41 +1,77 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
  body{
   font-family: 'Poppins', sans-serif;
  }
+
+ @media only screen and (min-width: 200PX) and (max-width: 600px) {
+/* header section */
+
+.banner-info h1{
+  font-weight: 900;
+  font-size: 36px;
+  }
+  
+  .hero-img img{
+    margin-left: 0px;
+    width: 100%;
+    margin-left: -20px;
+    }
+    .text-1, .text-2, .text-3,.little-women, .mid-women{
+    display: none; }
+  
+    .headphone img{
+    margin-left: 10px;
+    margin-bottom: 50px;
+    width: 100%; }
+
+    .ep-card{ margin-left: 5px;}
+    
+     .online{
+      width:90%;
+      padding-left: 0px;
+    }
+    .online img{
+    width: 100%;
+    margin: 0 20px;
+ 
+   
+    }
+    .experience{
+      position: absolute;
+      top: 10%;
+      left: 10px;
+    }
+    .secure{
+      position: absolute;
+      top: 45%;
+      right:-25px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+  .slick-prev:before{
+    background-color: #f7503a;
+    position: absolute;
+    width: 50px;
+    margin-left:280px;
+    padding:15px 10px;
+    border-radius: 50%;
+ 
+  }
+ 
+  .slick-next:before {
+    margin-left: -60px;
+  }
+
+  .our-keys{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin:70px 0px 100px 0px;
+    align-items: center;
+    gap: 30px;
+  }
+  .fot{
+    text-align: center;
+  }
+}

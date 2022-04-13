@@ -84,26 +84,4 @@
 .ins-title{
   margin-bottom: -40px;
 }
-@media only screen and (min-width: 200PX) and (max-width: 600px) {
 
-  .slick-prev:before{
-    background-color: #f7503a;
-    position: absolute;
-    width: 50px;
-    margin-left:280px;
-    padding:15px 10px;
-    border-radius: 50%;
-
-  }
-  .slick-next:before {
-    margin-left: -60px;
-  }
-
-  .our-keys{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin:70px 0px 100px 0px;
-    align-items: center;
-    gap: 30px;
-  }
-}

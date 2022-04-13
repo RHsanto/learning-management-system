@@ -13,7 +13,7 @@ const Categories = () => {
   return (
     <div className='categories-section'>
      <div className="container categories">
-       <div className="row text-center g-4">
+       <div className="row text-center mx-2 g-4">
          <h2 className=' fw-bold mb-5'>Top Categories</h2>
          <div className=" col-lg-3 category">
            <div className="d-flex ">

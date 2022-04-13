@@ -37,10 +37,10 @@ const PopularCourses = () => {
             </div>
            </div>
          </div>
-         <div className="row row-cols-1 row-cols-md-3 g-4">
+         <div className="row row-cols-1 row-cols-md-3 g-4 ep-card">
         {courses.map(data =>(
         <div className="col" key={data?.id}>
-  <div className="card p-card shadow">
+           <div className="card p-card shadow">
     <img src={data?.img} alt="..."/>
      <div className="love">
      <FaRegHeart/>
@@ -79,8 +79,8 @@ const PopularCourses = () => {
        <b> ${data?.price}</b>
       </div>
     </div>
-  </div>
-          </div>
+           </div>
+        </div>
         ))}
          <button className='all-courses mx-auto'>Browse All Courses</button>
     </div>
