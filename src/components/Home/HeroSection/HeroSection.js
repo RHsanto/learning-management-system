@@ -1,7 +1,8 @@
 import React from 'react';
 import Navbar from '../../shared/Navbar/Navbar'
-import './Herosection.css'
 import Hero from '../../../image/sada-removebg-preview.png'
+import { BsStarFill } from "react-icons/bs";
+import './Herosection.css'
 const HeroSection = () => {
   return (
     <div className='hero-section'>
@@ -18,15 +19,15 @@ const HeroSection = () => {
         <div className="col-lg-6 hero-img ">
           <img src={Hero} alt="" />
           <div className="text-1">
-            <h5 className='sub-title'>235K</h5>
+            <h5 className='sub-title'><b>235K</b></h5>
             <p><small>Worldwide Students</small></p>
           </div>
           <div className="text-2">
-            <h5 >4.7</h5>
+            <h5 ><b>4.7<BsStarFill className='star'/></b></h5>
             <p><small>Worldwide Students</small></p>
           </div>
           <div className="text-3">
-            <h5>3.5K</h5>
+            <h5><b>3.5K</b></h5>
             <p><small>Free Pro Courses</small></p>
           </div>
         </div>

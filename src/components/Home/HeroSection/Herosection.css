@@ -32,14 +32,16 @@ font-size: 3.5em;
   line-height: 30px;
 }
 .text-1, .text-2, .text-3{
-
   color: black;
-  width: 160px;
-  padding:5px 10px;
-  border-radius: 10px;
+  width: 165px;
+  padding:10px;
+  border-radius: 8px;
   color: white;
   line-height: 10px;
   position: absolute;
+  border-left: 1px  solid rgba(255, 255, 255, 0.507);
+  border-top: 1px  solid rgba(255, 255, 255, 0.507);
+  border-bottom: 1px  solid rgba(255, 255, 255, 0.507);
 }
 .text-1{
   top: 20%;
@@ -48,13 +50,22 @@ font-size: 3.5em;
 .text-2{
   top: 40%;
   right: 10%;
-  -webkit-backdrop-filter: blur(10px);
-   backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
 }
 .text-3{
- -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(100px);
   top: 65%;
   left: 35%;
-  
+}
+.text-2 h5{
+  color: #FFD712;
+}
+.text-3 h5{
+  color: #8d2aff;
+}
+.star{
+  font-size: 16px;
+  margin-left: 2px;
+  margin-top: -5px;
+ 
 }
