@@ -9,7 +9,7 @@ const Counter = () => {
     <div className='counter-section'>
      <div className="container">
        <div className="row g-3">  
-         <div className="col-lg-3">
+         <div className="col-lg-3 col-md-6 col-12">
            <div className="counter">
              <div className="c-icon"><TiUser/></div>
              <div className="number">
@@ -18,7 +18,7 @@ const Counter = () => {
              <p>Worldwide Students</p>
            </div>
          </div>
-         <div className="col-lg-3">
+         <div className="col-lg-3 col-md-6 col-12">
            <div className="counter">
              <div className="c-icon"><CgCalendarDates/></div>
              <div className="number">
@@ -27,7 +27,7 @@ const Counter = () => {
              <p> Years Experience</p>
            </div>
          </div>
-         <div className="col-lg-3">
+         <div className="col-lg-3 col-md-6 col-12">
            <div className="counter">
              <div className="c-icon"><RiAppsLine/></div>
              <div className="number">
@@ -36,7 +36,7 @@ const Counter = () => {
              <p>Professional Courses </p>
            </div>
          </div>
-         <div className="col-lg-3">
+         <div className="col-lg-3 col-md-6 col-12">
            <div className="counter">
              <div className="c-icon"><TiStarOutline/></div>
              <div className="number">

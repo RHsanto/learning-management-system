@@ -45,7 +45,6 @@
 /* header section */
 
  .banner-info h1{
-  font-weight: 900;
   font-size: 36px;
   }
   
@@ -117,3 +116,37 @@
   }
   }
  
+  /* tablet mode */
+  @media only screen and (min-width: 601PX) and (max-width: 768px){
+    .banner-info h1{
+      font-size: 46px;
+      }
+      .slick-prev:before{
+        
+        margin-left:550px;
+        padding:15px 10px;
+        border-radius: 50%;
+      }
+      .text-1{
+        left: 5%;
+        top: 15%;
+      }
+      .experience{
+        left: 20%;
+      }
+    .our-keys{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      margin:70px 0px 100px 0px;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .fot-search button{
+      margin-left: -55px;
+    }
+    .sliders, .review-card {
+      width: 250px !important;
+     
+    }
+  } 

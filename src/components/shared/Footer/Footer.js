@@ -10,7 +10,7 @@ const Footer = () => {
       <footer >
        <div className="container fot">
          <div className="row">
-           <div className="col-lg-3">
+           <div className="col-lg-3 col-md-6 col-12">
             <div className="fot-1">
             <h5>About</h5>
                <li>About us</li>
@@ -20,7 +20,7 @@ const Footer = () => {
                <li>In Press</li>
             </div>
            </div>
-           <div className="col-lg-3">
+           <div className="col-lg-3 col-md-6 col-12">
            <div className="fot-2">
             <h5>Quick Links</h5>
                <li>Refund Policy</li>
@@ -30,7 +30,7 @@ const Footer = () => {
                <li>Privacy Policy</li>
             </div>
            </div>
-           <div className="col-lg-2">
+           <div className="col-lg-2 col-md-6 col-12">
            <div className="fot-3">
             <h5>Support</h5>
                <li>Contact us</li>
@@ -40,7 +40,7 @@ const Footer = () => {
                <li>Ticketing</li>
             </div>
            </div>
-           <div className="col-lg-4">
+           <div className="col-lg-4 col-md-6 col-12">
            <div className="fot-4">
             <h5>Subscribe For Newsletter</h5>
             <p>Be the first one to know about discounts,offers and events.

@@ -26,16 +26,16 @@ const Instructor = () => {
   };
   
   return (
-    <div className='instructor-section'>
-      <div className="container">
-        <div className="">
-        <div className="d-flex justify-content-between">
+    <div className='instructor-section '>
+      <div className="container ">
+        <div >
+        <div className="d-flex justify-content-between ">
            <div className="ins-title">
              <h1 className='fw-bold'>Our Expert Instructor</h1>
            </div>
   
         </div>
-        <div className='my-5 '>
+        <div className='my-5'>
         <Slider {...settings}>
           {instructors.map(data=>(
   <div className='sliders '>  
@@ -50,7 +50,7 @@ const Instructor = () => {
      <li><BsYoutube/></li>
    </div>
  </div>
-</div>
+  </div>
           ))}
       
        
