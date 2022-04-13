@@ -1,18 +1,21 @@
 .hero-section{
   background-color:#255D52 ;
-  height: 800px;
-}
 
+}
+.hero-img{
+  position: relative;
+}
 .hero-img img{
 object-fit: cover;
-margin-left: -100px;
+width: 100%;
+margin-top: 50px;
+margin-left: -50px;
+
 }
 .banner{
   color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 50px;
+ align-items: center;
 }
 
 .banner-info h1{
@@ -27,4 +30,31 @@ font-size: 3.5em;
 .banner-info p{
   margin: 30px 0px;
   line-height: 30px;
+}
+.text-1, .text-2, .text-3{
+
+  color: black;
+  width: 160px;
+  padding:5px 10px;
+  border-radius: 10px;
+  color: white;
+  line-height: 10px;
+  position: absolute;
+}
+.text-1{
+  top: 20%;
+  background-color: #3F6E64;
+}
+.text-2{
+  top: 40%;
+  right: 10%;
+  -webkit-backdrop-filter: blur(10px);
+   backdrop-filter: blur(100px);
+}
+.text-3{
+ -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(100px);
+  top: 65%;
+  left: 35%;
+  
 }
