@@ -2,6 +2,7 @@ import React from 'react';
 import './Online.css';
 import { AiOutlineCheck } from "react-icons/ai";
 import tara from  '../../../image/tara-removebg-preview.png'
+import { Link } from "react-router-dom";
 const Online = () => {
   return (
     <div className='online-section'>
@@ -31,7 +32,9 @@ const Online = () => {
                 <li> <span className='marks'> <AiOutlineCheck/> </span> High Quality video & Audio Classes</li>
                 <li> <span className='marks'> <AiOutlineCheck/> </span> Finfish Your Courses, Get Certificate</li>
                </div>
-               <button className="global-btn"> More Details</button>
+               <button className="global-btn">
+               <Link to='/online-course'>More Details</Link>
+               </button>
             </div>
           </div>
         </div>

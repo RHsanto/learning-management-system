@@ -9,6 +9,8 @@ import { FaRegHeart } from "react-icons/fa";
 import Man from '../../../image/m-1.PNG'
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { Link } from "react-router-dom";
+
 const PopularCourses = () => {
   const [courses,setCourses] = useState([]);
   useEffect(()=>{
@@ -82,7 +84,9 @@ const PopularCourses = () => {
            </div>
         </div>
         ))}
-         <button className='all-courses mx-auto'>Browse All Courses</button>
+         <button className='all-courses  mx-auto'>
+         <Link to='/popular-course'>Browse All Courses</Link>
+           </button>
     </div>
  </div>
      </div>

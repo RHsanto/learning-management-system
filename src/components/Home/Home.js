@@ -13,7 +13,6 @@ import Reviews from './Reviews/Reviews';
 import LatestBlog from './LatestBlog/LatestBlog';
 import InsTWo from './Instructor/InsTwo';
 import MBReviews from './Reviews/MBReviews';
-import Footer from '../shared/Footer/Footer';
 const Home = () => {
   return (
     <div>
@@ -30,8 +29,7 @@ const Home = () => {
       </div>
       <div className='d-block d-md-none'>
       <InsTWo/>
-      </div>
-      
+      </div>  
       <SuitableCourse/>
       <div className='d-none d-md-block'>
       <Reviews/>
@@ -41,7 +39,7 @@ const Home = () => {
       </div>
       <LatestBlog/>
       <Supporters/>
-      <Footer/>
+   
     </div>
   );
 };

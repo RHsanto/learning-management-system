@@ -13,7 +13,7 @@ padding: 15px 0px;
 gap: 10px;
 border-radius: 5px;
 box-shadow: 5px 2px 10px rgb(204, 204, 204);
-
+cursor: pointer;
 }
 .category h5{
  font-size: 18px;
@@ -23,4 +23,5 @@ box-shadow: 5px 2px 10px rgb(204, 204, 204);
 .category .c-icons{
   color: #FF6752;
   font-size: 26px;
+
 }

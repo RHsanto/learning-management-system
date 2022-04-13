@@ -1,14 +1,13 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { Link } from "react-router-dom";
 import './LatestBlog.css'
-const LatestBlog = () => {
+const LatestNews = () => {
   const [blogs,setBlogs]=useState([]);
   useEffect(()=>{
     fetch('./blogs.json')
     .then(response=>response.json())
-    .then(data=>setBlogs(data.slice(0,3)))
+    .then(data=>setBlogs(data))
   },[])
   return (
     <div className='latest-section'>
@@ -29,16 +28,9 @@ const LatestBlog = () => {
          </div>
        ))}
        </div>
-        <div className="row">
-          <div className="col-lg-2 mx-auto">
-          <button className='all-courses'>
-            <Link to='/news-blogs'>Load More</Link>
-          </button>
-          </div>
-        </div>
      </div>
     </div>
   );
 };
 
-export default LatestBlog;
+export default LatestNews;

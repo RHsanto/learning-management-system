@@ -3,6 +3,8 @@ import './About.css'
 import MiddleImg from '../../../image/tera.png'
 import LittleImg from '../../../image/cut.PNG'
 import headeMen from '../../../image/heade-man.avif'
+import { Link } from "react-router-dom";
+
 const About = () => {
   return (
     <div className='about-section'>
@@ -26,7 +28,9 @@ const About = () => {
               <h2 className='fw-bold'>Explore Thousands of Creative Classes</h2>
               <p className='my-4 '><small>Dramatically supply transparent deliverables beforese backward comp internal
                or "organic" sources. Comp transparent leverage other. </small></p>
-               <button className='global-btn'> Explore Courses</button>
+               <button className='global-btn'> 
+         <Link to='/popular-course'>Explore Courses</Link>
+               </button>
             </div>
           </div>
         </div>

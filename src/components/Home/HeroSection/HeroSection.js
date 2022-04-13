@@ -1,12 +1,10 @@
 import React from 'react';
-import Navbar from '../../shared/Navbar/Navbar'
 import Hero from '../../../image/sada-removebg-preview.png'
 import { BsStarFill } from "react-icons/bs";
 import './Herosection.css'
 const HeroSection = () => {
   return (
     <div className='hero-section'>
-      <Navbar/>
      <div className="container ">
       <div className="row banner">
         <div className="col-lg-6 banner-info">

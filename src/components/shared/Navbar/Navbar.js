@@ -7,11 +7,11 @@ import { TiUserOutline } from "react-icons/ti";
 import { RiShoppingBagLine } from "react-icons/ri";
 import { HiMenuAlt1 } from "react-icons/hi";
 import { FaUserCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <div>
-     <div className="container text-light px-0">
-     
+    <div className='navbars'>
+     <div className="container text-light px-0">  
      <div className='d-none d-lg-block'>
      <div className=" d-flex justify-content-between align-items-center py-3">
          <div >
@@ -29,9 +29,9 @@ const Navbar = () => {
           <div className="dropdown">
          <button className="dropBtn">Home  <IoIosArrowDown/></button>
          <div className="dropdown-content">
-           <a href="#">Home 1</a>
-           <a href="#">Home 2</a>
-           <a href="#">Home 3</a>
+         <Link to='/'>Home 1</Link>
+         <Link to='/'>Home 2</Link>
+         <Link to='/'>Home 3</Link>   
          </div>
           </div>
            <div className="dropdown">
@@ -45,22 +45,20 @@ const Navbar = () => {
            <div className="dropdown">
          <button className="dropBtn">Instructor  <IoIosArrowDown/></button>
          <div className="dropdown-content">
-           <a href="#">Instructor 1</a>
-           <a href="#">Instructor 2</a>
-         </div>
+           <Link to='/instructor'>Expert Instructor</Link>
+      </div>
           </div>
            <div className="dropdown">
          <button className="dropBtn">Courses  <IoIosArrowDown/></button>
          <div className="dropdown-content">
-           <a href="#">Online Courses</a>
-           <a href="#">Popular </a>
+         <Link to='/popular-course'>Popular Courses</Link>
+         <Link to='/online-course'>Online Courses</Link>
          </div>
           </div>
            <div className="dropdown">
          <button className="dropBtn">Blog  <IoIosArrowDown/></button>
          <div className="dropdown-content">
-           <a href="#">News</a>
-           <a href="#">Recent Blogs</a>
+         <Link to='/news-blogs'>Recent Blogs</Link>
          </div>
           </div>
           <div className="search">
