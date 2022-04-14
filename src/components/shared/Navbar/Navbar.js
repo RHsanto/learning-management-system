@@ -18,7 +18,7 @@ const Navbar = () => {
          <div className="dropdown">
          <button className=" logo">Categories <IoIosArrowDown/></button>
          <div className="dropdown-content ">
-           <a href="#">Category 1</a>
+         <Link to='/top-category'>Top Category </Link>
            <a href="#">Category 2</a>
            <a href="#">Category 3</a>
          </div>

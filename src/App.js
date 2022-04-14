@@ -13,6 +13,7 @@ import AllReviews from "./components/Home/Reviews/AllReviews";
 import SingleCourse from "./components/SingleItems/SingleCourse";
 import About from "./components/Home/About/About";
 import SuitableCourse from "./components/Home/SuitableCourse/SuitableCourse";
+import Categories from "./components/Home/Categories/Categories";
 function App() {
   return (
     <>
@@ -24,6 +25,7 @@ function App() {
           <Route  path="/reviews" element={<AllReviews/>} />
           <Route  path="/about" element={<About/>} />
           <Route  path="/suti-course" element={<SuitableCourse/>} />
+          <Route  path="/top-category" element={<Categories/>} />
           <Route  path="/popular-course" element={<PopularCourses/>} />
           <Route  path="/popular-courses/:id" element={<SingleCourse/>} />
           <Route  path="/online-course" element={<Online/>} />
