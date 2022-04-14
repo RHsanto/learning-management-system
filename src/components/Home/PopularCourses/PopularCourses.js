@@ -6,7 +6,6 @@ import { RiPlayCircleLine } from "react-icons/ri";
 import { TiUser } from "react-icons/ti";
 import { BsStarHalf } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
-import Man from '../../../image/m-1.PNG'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { Link } from "react-router-dom";
@@ -51,7 +50,7 @@ const PopularCourses = () => {
       {/* here title & user */}
      <div className="d-flex align-items-center gap-2 ">
        <div className="man">
-         <img src={Man} alt="" />
+         <img src={data?.userImg} alt="" />
        </div>
        <Link to={`/popular-courses/${data?._id}`}>
         <h6 className="card-title fw-bold text-dark pop-title">{data?.title}</h6>
