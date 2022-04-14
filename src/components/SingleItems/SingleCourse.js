@@ -8,6 +8,7 @@ import { RiPlayCircleLine } from "react-icons/ri";
 import { TiUser } from "react-icons/ti";
 import { FcHome } from "react-icons/fc";
 import { GrLanguage } from "react-icons/gr";
+import { AiOutlineFieldTime } from "react-icons/ai";
 
 const SingleCourse = () => {
   const id =useParams();
@@ -51,13 +52,13 @@ const SingleCourse = () => {
          <div className="col-lg-4">
           <div className="single-info shadow p-5">
            <h3><b>${courses?.price}</b></h3>
-           <ul>
+           <div className='info-icons'>
              <li><FcHome/> Instructor: Fahad</li>
-             <li><RiPlayCircleLine/> {courses?.class}: Class</li>
-             <li><TiUser/> {courses?.students}: Students</li>
-             <li><GrLanguage/> Language: English/Bangla</li>
-             <li>Duration: 12h 20m 20s</li>
-           </ul>
+             <li><span><RiPlayCircleLine/></span> {courses?.class}: Class</li>
+             <li><span><TiUser/></span> {courses?.students}: Students</li>
+             <li><span><GrLanguage/></span> Language: English/Bangla</li>
+             <li><AiOutlineFieldTime/> Duration: 12h 20m 20s</li>
+           </div>
           </div>
          </div>
        </div>

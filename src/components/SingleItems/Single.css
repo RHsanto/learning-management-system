@@ -17,3 +17,13 @@ object-fit: cover;
   height: 70px;
   border-radius: 50%;
 }
+.info-icons li{
+  list-style: none;
+  margin: 20px 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid;
+}
+.info-icons span{
+  color: #274BFF;
+  font-size: 18px;
+}
