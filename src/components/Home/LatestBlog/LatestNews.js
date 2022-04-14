@@ -5,7 +5,7 @@ import './LatestBlog.css'
 const LatestNews = () => {
   const [blogs,setBlogs]=useState([]);
   useEffect(()=>{
-    fetch('./blogs.json')
+    fetch('http://localhost:8000/all-blogs')
     .then(response=>response.json())
     .then(data=>setBlogs(data))
   },[])
