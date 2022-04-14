@@ -27,12 +27,7 @@ const Reviews = () => {
     <div className='instructor-section my-5  mx-4'>
       <div className="container">
         <div className="">
-        <div className="d-flex justify-content-between">
-           <div className="mb-title">
-             <h1 className='fw-bold'>4700+ Happy Students</h1>
-           </div>
-  
-        </div>
+        <h2 className='fw-bold py-5 my-5'>4700+ Happy Students</h2>
         <div className='my-5 '>
         <Slider {...settings}>
           {reviews.map(data=>(

@@ -29,8 +29,8 @@ const InsTWo = () => {
     <div className='instructor-section mx-3'>
       <div className="container">
         <div className="">
-        <div className="re-title">
-             <h2 className='fw-bold '>Our Expert Instructor</h2>
+        <div className="pb-3">
+             <h2 >Our Expert Instructor</h2>
            </div>
   
         <div className='my-5 '>

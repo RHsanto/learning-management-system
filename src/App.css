@@ -70,12 +70,13 @@ a{
       padding: 10px;
       border-radius: 5px;
     }
+   
 /* React slick */
   .slick-prev:before{
     background-color: #f7503a;
     position: absolute;
     width: 50px;
-    margin-left:280px;
+    margin-left:220px;
     padding:15px 10px;
     border-radius: 50%;
   }
@@ -102,6 +103,9 @@ a{
   }
   .fot-search{
     width: 100%;
+  }
+  .fot-search button{
+   margin-left: -40px !important;
   }
   }
  
@@ -136,7 +140,7 @@ a{
       margin-left: 10px;
     }
     .fot-search button{
-      margin-left: -55px;
+      margin-left: -55px !important;
     }
     .sliders, .review-card {
       width: 250px !important;
