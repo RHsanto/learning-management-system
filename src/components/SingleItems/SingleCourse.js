@@ -15,7 +15,7 @@ const SingleCourse = () => {
 
   const [courses,setCourses] = useState([]);
   useEffect(()=>{
-    fetch(`http://localhost:8000/all-popCourse/${id?.id}`)
+    fetch(`https://secure-sea-90788.herokuapp.com/all-popCourse/${id?.id}`)
     .then(res=>res.json())
     .then(data=>setCourses(data))
     

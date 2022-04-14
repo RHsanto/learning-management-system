@@ -6,7 +6,7 @@ import { BsYoutube } from "react-icons/bs";
 const ExpertInstructor = () => {
   const [instructors,setInstructors]=useState([])
   useEffect(()=>{
-    fetch('http://localhost:8000/all-instructor')
+    fetch('https://secure-sea-90788.herokuapp.com/all-instructor')
     .then(res=>res.json())
     .then(data=>setInstructors(data))
   },[])
