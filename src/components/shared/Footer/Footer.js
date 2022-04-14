@@ -4,6 +4,7 @@ import { RiFacebookCircleLine } from "react-icons/ri";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { RiBasketballLine } from "react-icons/ri";
 import { FaWhatsapp } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <div >
@@ -13,31 +14,32 @@ const Footer = () => {
            <div className="col-lg-3 col-md-6 col-12">
             <div className="fot-1">
             <h5>About</h5>
-               <li>About us</li>
-               <li>Blog</li>
-               <li>Careers</li>
-               <li>Jobs</li>
-               <li>In Press</li>
+            <li><Link to='/about'>About us</Link></li>
+            <li><Link to='/news-blogs'> Blogs</Link></li>
+            <li><Link to='/#'> Careers</Link></li>
+            <li><Link to='/#'> Jobs</Link></li>
+            <li><Link to='/#'> In Press</Link></li>
             </div>
            </div>
            <div className="col-lg-3 col-md-6 col-12">
            <div className="fot-2">
             <h5>Quick Links</h5>
-               <li>Refund Policy</li>
-               <li>Documentation</li>
-               <li>Chat online</li>
-               <li>Order Cancel</li>
-               <li>Privacy Policy</li>
+            <li><Link to='/#'> Refund Policy</Link></li>
+            <li><Link to='/#'> Documentation</Link></li>
+            <li><Link to='/#'> Chat online</Link></li>
+            <li><Link to='/#'> Order Cancel</Link></li>
+            <li><Link to='/#'> Privacy Policy</Link></li>
+      
             </div>
            </div>
            <div className="col-lg-2 col-md-6 col-12">
            <div className="fot-3">
             <h5>Support</h5>
-               <li>Contact us</li>
-               <li>Online Chat</li>
-               <li>Whatsapp</li>
-               <li>Telegram</li>
-               <li>Ticketing</li>
+            <li><Link to='/#'> Contact us</Link></li>
+            <li><Link to='/#'> Online Chat</Link></li>
+            <li><Link to='/#'> Whatsapp</Link></li>
+            <li><Link to='/#'> Telegram</Link></li>
+            <li><Link to='/#'> Ticketing</Link></li>
             </div>
            </div>
            <div className="col-lg-4 col-md-6 col-12">
