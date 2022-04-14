@@ -14,6 +14,8 @@ import SingleCourse from "./components/SingleItems/SingleCourse";
 import About from "./components/Home/About/About";
 import SuitableCourse from "./components/Home/SuitableCourse/SuitableCourse";
 import Categories from "./components/Home/Categories/Categories";
+import Counter from "./components/Home/Counter/Counter";
+import Supporters from "./components/Home/Supporters/Supporters";
 function App() {
   return (
     <>
@@ -26,6 +28,8 @@ function App() {
           <Route  path="/about" element={<About/>} />
           <Route  path="/suti-course" element={<SuitableCourse/>} />
           <Route  path="/top-category" element={<Categories/>} />
+          <Route  path="/counter" element={<Counter/>} />
+          <Route  path="/supporters" element={<Supporters/>} />
           <Route  path="/popular-course" element={<PopularCourses/>} />
           <Route  path="/popular-courses/:id" element={<SingleCourse/>} />
           <Route  path="/online-course" element={<Online/>} />
