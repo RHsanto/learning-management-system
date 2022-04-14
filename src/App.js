@@ -10,6 +10,7 @@ import Footer from "./components/shared/Footer/Footer";
 import LatestNews from "./components/Home/LatestBlog/LatestNews";
 import ExpertInstructor from "./components/Home/Instructor/ExpertInstructor";
 import AllReviews from "./components/Home/Reviews/AllReviews";
+import SingleCourse from "./components/SingleItems/SingleCourse";
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
           <Route  path="/instructor" element={<ExpertInstructor/>} />
           <Route  path="/reviews" element={<AllReviews/>} />
           <Route  path="/popular-course" element={<PopularCourses/>} />
+          <Route  path="/popular-courses/:id" element={<SingleCourse/>} />
           <Route  path="/online-course" element={<Online/>} />
           <Route  path="/news-blogs" element={<LatestNews/>} />
         </Routes>

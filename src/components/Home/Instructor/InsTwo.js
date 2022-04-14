@@ -36,7 +36,7 @@ const InsTWo = () => {
         <div className='my-5 '>
         <Slider {...settings}>
           {instructors.map(data=>(
-               <div className='sliders'>  
+               <div key={data?._id} className='sliders'>  
                <div className="ex-card ">
                 <img src={data?.img} alt="img" />
                 <h5>{data?.name}</h5>

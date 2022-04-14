@@ -41,7 +41,7 @@ const PopularCourses = () => {
          </div>
          <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3  g-4 ">
         {courses.map(data =>(
-        <div className="col" key={data?.id}>
+        <div className="col" key={data?._id}>
            <div className="card p-card shadow">
     <img src={data?.img} alt="..."/>
      <div className="love">
@@ -53,7 +53,10 @@ const PopularCourses = () => {
        <div className="man">
          <img src={Man} alt="" />
        </div>
-        <h6 className="card-title fw-bold">The Complete 2022 Web Development Camp</h6></div>
+       <Link to={`/popular-courses/${data?._id}`}>
+        <h6 className="card-title fw-bold text-dark">The Complete 2022 Web Development Camp</h6>
+       </Link>
+      </div>
     </div>
     {/* here count info */}
     <div className="p-count d-flex  justify-content-between">

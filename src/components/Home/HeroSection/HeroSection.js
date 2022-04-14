@@ -12,7 +12,7 @@ const HeroSection = () => {
           <h1>For Every Student,<br/> Every <span>Classroom</span>.</h1>
      <p><small>Dramatically supply transparent deliverable before backward <br/> comp internal 
             "organic" sources. Competently leverage other.</small></p>
-            <button className=" global-btn">Explore Courses</button>
+            <button className=" global-btn ">Explore Courses</button>
         </div>
         <div className="col-lg-6 hero-img ">
           <img src={Hero} alt="" />

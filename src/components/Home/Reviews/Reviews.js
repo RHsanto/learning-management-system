@@ -34,7 +34,7 @@ const Reviews = () => {
         <div className='my-5 '>
         <Slider {...settings}>
           {reviews.map(data=>(
-         <div className="review-card mb-5">
+         <div key={data?._id} className="review-card mb-5">
   <img src={data?.img} alt="" />
   <div className="re-body  ">
  <div className="d-flex justify-content-between">

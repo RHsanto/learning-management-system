@@ -17,7 +17,7 @@ const ExpertInstructor = () => {
         <h1 className='fw-bold text-center my-5'>Our Expert Instructor</h1>
         <div className='row'>
           {instructors.map(data=>(
-  <div className='sliders col-lg-4 col-md-6 col-12'>  
+  <div key={data?._id} className='sliders col-lg-4 col-md-6 col-12'>  
   <div className="ex-card ">
    <img src={data?.img} alt="img" />
    <h5>{data?.name}</h5>

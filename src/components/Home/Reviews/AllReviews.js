@@ -14,7 +14,7 @@ const AllReviews = () => {
     <h1 className='fw-bold text-center my-5'> <span className="sub-title">4700+</span> Happy Students</h1>
      <div className='my-5 row'>
         {reviews.map(data=>(
-       <div className="review-card mb-5 col-lg-4 col-md-6 col-12">
+       <div key={data?._id} className="review-card mb-5 col-lg-4 col-md-6 col-12">
 <img src={data?.img} alt="" />
 <div className="re-body  ">
 <div className="d-flex justify-content-between">
