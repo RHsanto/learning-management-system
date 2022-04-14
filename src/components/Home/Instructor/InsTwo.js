@@ -11,7 +11,7 @@ const InsTWo = () => {
 
   const [instructors,setInstructors]=useState([])
   useEffect(()=>{
-    fetch('./instructor.json')
+    fetch('http://localhost:8000/all-instructor')
     .then(res=>res.json())
     .then(data=>setInstructors(data))
   },[])
