@@ -7,7 +7,7 @@ import { BsStarHalf } from "react-icons/bs";
 import { RiPlayCircleLine } from "react-icons/ri";
 import { TiUser } from "react-icons/ti";
 import { FcHome } from "react-icons/fc";
-import { GrLanguage } from "react-icons/gr";
+import { MdLanguage } from "react-icons/md";
 import { AiOutlineFieldTime } from "react-icons/ai";
 
 const SingleCourse = () => {
@@ -27,7 +27,7 @@ const SingleCourse = () => {
      <div className="container my-5">
        <div className="row d-flex  align-items-center">
          <div className="col-lg-6 ">
-        <div className="imag-box px-3">
+        <div className="img-box px-3">
           <button>Design</button>
           <h3>{courses?.title}</h3>
           <div className="d-flex justify-content-between align-items-center mb-3">
@@ -53,12 +53,13 @@ const SingleCourse = () => {
           <div className="single-info shadow p-5">
            <h3><b>${courses?.price}</b></h3>
            <div className='info-icons'>
-             <li><FcHome/> Instructor: Fahad</li>
-             <li><span><RiPlayCircleLine/></span> {courses?.class}: Class</li>
-             <li><span><TiUser/></span> {courses?.students}: Students</li>
-             <li><span><GrLanguage/></span> Language: English/Bangla</li>
-             <li><AiOutlineFieldTime/> Duration: 12h 20m 20s</li>
+             <li><FcHome/> Instructor : Fahad</li>
+             <li><span><RiPlayCircleLine/></span> Class : {courses?.class} </li>
+             <li><span><TiUser/></span> Students : {courses?.students} </li>
+             <li><span><MdLanguage/></span> Language : English/Bangla</li>
+             <li><span><AiOutlineFieldTime/></span> Duration : 12h 20m 20s</li>
            </div>
+           <button>Enroll Now</button>
           </div>
          </div>
        </div>
