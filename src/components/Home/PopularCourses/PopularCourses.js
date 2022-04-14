@@ -54,7 +54,7 @@ const PopularCourses = () => {
          <img src={Man} alt="" />
        </div>
        <Link to={`/popular-courses/${data?._id}`}>
-        <h6 className="card-title fw-bold text-dark">The Complete 2022 Web Development Camp</h6>
+        <h6 className="card-title fw-bold text-dark pop-title">{data?.title}</h6>
        </Link>
       </div>
     </div>

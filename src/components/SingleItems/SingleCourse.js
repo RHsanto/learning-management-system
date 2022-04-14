@@ -53,7 +53,7 @@ const SingleCourse = () => {
           <div className="single-info shadow p-5">
            <h3><b>${courses?.price}</b></h3>
            <div className='info-icons'>
-             <li><FcHome/> Instructor : Fahad</li>
+             <li><span><FcHome/></span> Instructor : Fahad</li>
              <li><span><RiPlayCircleLine/></span> Class : {courses?.class} </li>
              <li><span><TiUser/></span> Students : {courses?.students} </li>
              <li><span><MdLanguage/></span> Language : English/Bangla</li>

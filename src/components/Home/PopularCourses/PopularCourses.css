@@ -51,7 +51,10 @@ background-color: #f7dbd4;
 font-size: 15px;
 border-radius: 5px;
 }
-
+.pop-title:hover{
+text-decoration: underline;
+color: #f57766 !important;
+}
 .p-button button:hover{
   color: #FF6752;
 }

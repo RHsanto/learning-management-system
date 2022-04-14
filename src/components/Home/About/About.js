@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css'
-import MiddleImg from '../../../image/tera.png'
+import MiddleImg from '../../../image/jakra.png'
 import LittleImg from '../../../image/cut.PNG'
 import headeMen from '../../../image/heade-man.avif'
 import { Link } from "react-router-dom";
