@@ -1,6 +1,9 @@
 import React from 'react';
 import './Online.css';
 import { AiOutlineCheck } from "react-icons/ai";
+import { BsCameraVideo } from "react-icons/bs";
+import { FiPhone } from "react-icons/fi";
+import { BiDotsHorizontalRounded,BiVolumeMute } from "react-icons/bi";
 import tara from  '../../../image/tara-removebg-preview.png'
 import { Link } from "react-router-dom";
 const Online = () => {
@@ -16,6 +19,12 @@ const Online = () => {
           <div className="secure shadow">
             <div className='icon'><AiOutlineCheck/></div> 
             <small><b>Fully Safe & Secure</b></small>
+          </div>
+          <div className="over-icons d-flex">
+            <li><BiVolumeMute/></li>
+            <li><FiPhone/></li>
+            <li><BsCameraVideo/></li>
+            <li><BiDotsHorizontalRounded/></li>
           </div>
           </div>
           <div className="col-lg-6">

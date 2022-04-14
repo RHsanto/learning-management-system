@@ -64,3 +64,29 @@
   padding: 10px;
   border-radius: 5px;
 }
+.over-icons{
+  position: absolute;
+  bottom: 8%;
+  right: 25%;
+}
+.over-icons li{
+  list-style: none;
+  font-size: 17px;
+  margin-left: 10px;
+  padding:10px 15px;
+  border-radius: 50%;
+ 
+}
+.over-icons li:nth-child(1), .over-icons li:nth-child(4){
+  background-color: white;
+  color: #9397A7;
+
+}
+.over-icons li:nth-child(2){
+  background-color: #FF6752;
+  color: white;
+}
+.over-icons li:nth-child(3){
+  background-color: #2D9BDB;
+  color: white;
+}
