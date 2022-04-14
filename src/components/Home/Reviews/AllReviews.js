@@ -4,7 +4,7 @@ import { BsStarHalf } from "react-icons/bs";
 const AllReviews = () => {
   const [reviews,setReviews]=useState([])
   useEffect(()=>{
-    fetch('./reviews.json')
+    fetch('http://localhost:8000/all-Reviews')
     .then(res=>res.json())
     .then(data=>setReviews(data))
   },[])
