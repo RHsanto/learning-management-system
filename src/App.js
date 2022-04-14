@@ -11,6 +11,8 @@ import LatestNews from "./components/Home/LatestBlog/LatestNews";
 import ExpertInstructor from "./components/Home/Instructor/ExpertInstructor";
 import AllReviews from "./components/Home/Reviews/AllReviews";
 import SingleCourse from "./components/SingleItems/SingleCourse";
+import About from "./components/Home/About/About";
+import SuitableCourse from "./components/Home/SuitableCourse/SuitableCourse";
 function App() {
   return (
     <>
@@ -20,6 +22,8 @@ function App() {
           <Route index element={<Home />} />
           <Route  path="/instructor" element={<ExpertInstructor/>} />
           <Route  path="/reviews" element={<AllReviews/>} />
+          <Route  path="/about" element={<About/>} />
+          <Route  path="/suti-course" element={<SuitableCourse/>} />
           <Route  path="/popular-course" element={<PopularCourses/>} />
           <Route  path="/popular-courses/:id" element={<SingleCourse/>} />
           <Route  path="/online-course" element={<Online/>} />

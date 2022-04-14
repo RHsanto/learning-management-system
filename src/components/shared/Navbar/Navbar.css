@@ -89,6 +89,10 @@ font-size: 14px;
   font-size: 16px;
   cursor: pointer;
   font-weight: 600;
+  
+}
+.mb-menu li a{
+  color: black ;
 }
 .mb-menu li:hover{
   background-color: #d8d7d7

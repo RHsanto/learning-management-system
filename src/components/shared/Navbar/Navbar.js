@@ -37,9 +37,10 @@ const Navbar = () => {
            <div className="dropdown">
          <button className="dropBtn">Pages  <IoIosArrowDown/></button>
          <div className="dropdown-content">
-         <Link to='/reviews'>Reviews</Link>
-           <a href="#">Pages 2</a>
-           <a href="#">Pages 3</a>
+         <Link to='/reviews'>Reviews Page</Link>
+         <Link to='/about'>About Page</Link>
+         <Link to='/suti-course'>Suitable Course</Link>
+          
          </div>
           </div>
            <div className="dropdown">
@@ -102,11 +103,11 @@ const Navbar = () => {
  
  <div className="mb-menu">
  
- <li>Home</li>
- <li>Pages</li>
- <li>Instructor</li>
- <li>Courses</li>
- <li>Blogs</li>
+<li> <Link to='/'>Home</Link></li>
+<li> <Link to='/reviews'>Reviews</Link></li>
+<li> <Link to='/instructor'>Expert Instructor</Link></li>
+ <li>  <Link to='/popular-course'>Popular Courses</Link></li>
+ <li><Link to='/news-blogs'> Blogs</Link></li>
 
  </div>
 </div>
