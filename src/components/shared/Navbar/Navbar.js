@@ -67,10 +67,41 @@ const Navbar = () => {
             <input type="search" name="" id="" placeholder='Search Courses' />
           </div>
           <div >
+          <>
+           <div type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <TiUserOutline className="User"/>
+            </div>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body text-dark">
+                <h4> Authentication system is not connected yet. It will be added soon.</h4>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </>
           </div>
           <div >
-          <RiShoppingBagLine className="cart"/>
+           <div type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+           <RiShoppingBagLine className="cart"/>
+            </div>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body text-dark">
+                <h4> Authentication system is not connected yet. It will be added soon.</h4>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
           </div>
           </div>
        </div>
@@ -87,21 +118,19 @@ const Navbar = () => {
        <span className="learn">-learning</span></h2>
        <FaUserCircle className='fs-1 '/>
        </div>
-
-
-<div className="offcanvas offcanvas-start text-dark"
- tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-  <div className="offcanvas-header">
-    <h3 className="offcanvas-title" id="offcanvasExampleLabel">
+      <div className="offcanvas offcanvas-start text-dark"
+      tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div className="offcanvas-header">
+      <h3 className="offcanvas-title" id="offcanvasExampleLabel">
       <span className='sub-title'>E</span>
       <span className="learn">-learning</span> </h3>
-    <button type="button"
+     <button type="button"
      className="btn-close text-reset"
       data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div className="offcanvas-body"> 
+    </div>
+     <div className="offcanvas-body"> 
  
- <div className="mb-menu">
+    <div className="mb-menu">
  
 <li> <Link to='/'>Home</Link></li>
 <li> <Link to='/reviews'>Reviews</Link></li>
