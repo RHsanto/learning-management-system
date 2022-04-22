@@ -25,7 +25,7 @@ button.dropBtn {
   z-index: 1;
 }
 
-/* Links inside the dropdown */
+
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -34,10 +34,10 @@ button.dropBtn {
   font-size: 14px;
 }
 
-/* Change color of dropdown links on hover */
+
 .dropdown-content a:hover {background-color: #d8d7d7}
 
-/* Show the dropdown menu on hover */
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
