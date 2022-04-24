@@ -8,7 +8,12 @@ import { RiShoppingBagLine } from "react-icons/ri";
 import { HiMenuAlt1 } from "react-icons/hi";
 import { FaUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import useFirebase from '../../../hooks/useFirebase';
 const Navbar = () => {
+const {signInUsingGoogle,user,logOut}=useFirebase();
+  const google=(e)=>{
+    signInUsingGoogle();
+  }
   return (
     <div className='navbars'>
      <div className="container text-light px-0">  
@@ -67,24 +72,23 @@ const Navbar = () => {
             <input type="search" name="" id="" placeholder='Search Courses' />
           </div>
           <div >
-          <>
-           <div type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <TiUserOutline className="User"/>
-            </div>
-
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-body text-dark">
-                <h4> Authentication system is not connected yet. It will be added soon.</h4>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          </>
+{/* add authentication */}
+        
+          {
+     user.email ?
+        <>  
+            <img className="UserImg" src={user.photoURL} alt="" />
+            {/* <span className='user-name'>{user.displayName} </span> */}
+            
+           {user.emailVerified? <></>:
+            <span className='user-name'>{user.email} </span>}
+            <button className='btn btn-danger ms-3' onClick={logOut}>
+               Log-out</button> </>
+        :<>
+         <TiUserOutline onClick={google} className="User"/> 
+        </>
+        
+     }
           </div>
           <div >
            <div type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -116,7 +120,12 @@ const Navbar = () => {
        </a>
        <h2 className='pt-2'>  <span className='sub-title'>E</span>
        <span className="learn">-learning</span></h2>
-       <FaUserCircle className='fs-1 '/>
+       {
+     user.email ?
+            <img className="UserImg" src={user.photoURL} alt="" /> 
+          :
+           <FaUserCircle className='fs-1 '/>
+     }
        </div>
       <div className="offcanvas offcanvas-start text-dark"
       tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">

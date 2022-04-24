@@ -16,6 +16,7 @@ const signInUsingGoogle =()=>{
     signInWithPopup(auth,provider)
     .then(result=>{
       setUser(result.user)
+      console.log(result.user);
     })
    .catch(error => {
      setError(error.message);

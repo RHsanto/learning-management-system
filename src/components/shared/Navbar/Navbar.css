@@ -167,3 +167,8 @@ font-size: 14px;
 .sub-title{
   color: #FF6752;
 }
+
+.UserImg{
+  width: 40px;
+  border-radius: 50%;
+}
