@@ -16,6 +16,7 @@ import SuitableCourse from "./components/Home/SuitableCourse/SuitableCourse";
 import Categories from "./components/Home/Categories/Categories";
 import Counter from "./components/Home/Counter/Counter";
 import Supporters from "./components/Home/Supporters/Supporters";
+import NotFound from "./components/NotFound/NotFound";
 function App() {
   return (
     <>
@@ -34,6 +35,7 @@ function App() {
           <Route  path="/popular-courses/:id" element={<SingleCourse/>} />
           <Route  path="/online-course" element={<Online/>} />
           <Route  path="/news-blogs" element={<LatestNews/>} />
+          <Route  path="*" element={<NotFound/>} />
         </Routes>
         <Footer/>
       </BrowserRouter>
