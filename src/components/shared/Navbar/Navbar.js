@@ -79,6 +79,7 @@ const {signInUsingGoogle,user,logOut}=useFirebase();
         
           {
      user.email ?
+
         <>  
             <img className="UserImg" src={user.photoURL} alt="img" />
             {/* <span className='user-name'>{user.displayName} </span>    */}
@@ -87,7 +88,9 @@ const {signInUsingGoogle,user,logOut}=useFirebase();
             <button className='btn btn-danger ms-3' onClick={logOut}>
                Log-out</button> </>
         :<>
-         <TiUserOutline onClick={google} className="User"/> 
+         <button onClick={google} className='sign-btn'> Sign-in
+         <TiUserOutline  className="User"/> 
+         </button>  
         </>
         
      }
