@@ -30,6 +30,12 @@ font-size: 3.5em;
   margin: 30px 0px;
   line-height: 30px;
 }
+.global-btn{
+  color: white;
+}
+.global-btn:hover{
+  color:#FF6752;
+}
 .text-1, .text-2, .text-3{
   color: black;
   width: 165px;
