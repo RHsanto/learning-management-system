@@ -19,7 +19,7 @@ const {signInUsingGoogle,user,logOut}=useFirebase();
      <div className="container text-light px-0">  
      <div className='d-none d-lg-block'>
      <div className=" d-flex justify-content-between align-items-center py-3">
-         <div >
+         {/* <div >
          <div className="dropdown">
          <button className=" logo">Categories <IoIosArrowDown/></button>
          <div className="dropdown-content ">
@@ -28,6 +28,9 @@ const {signInUsingGoogle,user,logOut}=useFirebase();
          <Link to='/supporters'>Supporters Page </Link>
          </div>
           </div>
+         </div> */}
+         <div>
+          <h3>LOGO</h3>
          </div>
           <div className="dropdownMenu d-flex
            justify-content-center align-items-center gap-4">
@@ -77,8 +80,8 @@ const {signInUsingGoogle,user,logOut}=useFirebase();
           {
      user.email ?
         <>  
-            <img className="UserImg" src={user.photoURL} alt="" />
-            {/* <span className='user-name'>{user.displayName} </span> */}   
+            <img className="UserImg" src={user.photoURL} alt="img" />
+            {/* <span className='user-name'>{user.displayName} </span>    */}
            {user.emailVerified? <></>:
             <span className='user-name'>{user.email} </span>}
             <button className='btn btn-danger ms-3' onClick={logOut}>
