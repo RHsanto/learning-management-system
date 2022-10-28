@@ -81,12 +81,24 @@ const {signInUsingGoogle,user,logOut}=useFirebase();
      user.email ?
 
         <>  
-            <img className="UserImg" src={user.photoURL} alt="img" />
-            {/* <span className='user-name'>{user.displayName} </span>    */}
-           {user.emailVerified? <></>:
-            <span className='user-name'>{user.email} </span>}
-            <button className='btn btn-danger ms-3' onClick={logOut}>
-               Log-out</button> </>
+            
+    <div class="dropdown">
+    <button class=" dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+    <span className='user-name'>{user.displayName} </span> 
+    </button>
+       <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        {/* {user.photoURL ? <img className="UserImg" src={user.photoURL} alt="img" /> :
+        <></> } */}
+         <FaUserCircle  className='logged-user' /> 
+         <button class="dropdown-item" type="button">Dashboard</button>
+         <button className='btn btn-danger ms-3' onClick={logOut}>Log-out</button> 
+       </ul>
+     </div>
+           
+             
+           {/* {user.emailVerified? <></>:
+            <span className='user-name'>{user.email} </span>} */}
+            </>
         :<>
          <button onClick={google} className='sign-btn'> Sign-in
          <TiUserOutline  className="User"/> 
