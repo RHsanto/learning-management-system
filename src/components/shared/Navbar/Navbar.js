@@ -90,7 +90,7 @@ const {signInUsingGoogle,user,logOut}=useFirebase();
        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
         {user.photoURL ? <img className="UserImg" src={user.photoURL} alt="img" /> :
         <> <TiUserOutline  className="User"/> </> }
-         <button class="dropdown-item py-2 mt-1" >Dashboard</button>
+         <button class="dash-btn" >Dashboard</button>
          <button className=' logout-btn' onClick={logOut}>Log-out
          <FiLogOut className='ms-2' /></button> 
        </ul>
