@@ -2,11 +2,12 @@
 import React from 'react';
 import './Navbar.css'
 import { IoIosArrowDown } from "react-icons/io";
-import { FiSearch } from "react-icons/fi";
+import { FiSearch,FiLogOut } from "react-icons/fi";
 import { TiUserOutline } from "react-icons/ti";
 import { RiShoppingBagLine } from "react-icons/ri";
 import { HiMenuAlt1 } from "react-icons/hi";
 import { FaUserCircle } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 import useFirebase from '../../../hooks/useFirebase';
 const Navbar = () => {
@@ -87,11 +88,11 @@ const {signInUsingGoogle,user,logOut}=useFirebase();
     <span className='user-name'>{user.displayName} </span> 
     </button>
        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-        {/* {user.photoURL ? <img className="UserImg" src={user.photoURL} alt="img" /> :
-        <></> } */}
-       <img className="UserImg" src={user.photoURL} alt="img" /> 
+        {user.photoURL ? <img className="UserImg" src={user.photoURL} alt="img" /> :
+        <> <TiUserOutline  className="User"/> </> }
          <button class="dropdown-item py-2 mt-1" >Dashboard</button>
-         <button className=' logout-btn' onClick={logOut}>Log-out</button> 
+         <button className=' logout-btn' onClick={logOut}>Log-out
+         <FiLogOut className='ms-2' /></button> 
        </ul>
      </div>
            

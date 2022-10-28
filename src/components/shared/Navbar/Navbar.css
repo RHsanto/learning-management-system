@@ -179,7 +179,10 @@ color: white;
 border: 0;
 border-radius: 5px;}
 
-.logged-user{
-  font-size: 30px;
- 
+.logout-btn{
+  width: 100%;
+  border: 0;
+  padding: 8px;
+  background-color: #DC3545;
+  color: white;
 }
