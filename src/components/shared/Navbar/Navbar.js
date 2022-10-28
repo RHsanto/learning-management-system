@@ -89,9 +89,9 @@ const {signInUsingGoogle,user,logOut}=useFirebase();
        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
         {/* {user.photoURL ? <img className="UserImg" src={user.photoURL} alt="img" /> :
         <></> } */}
-         <FaUserCircle  className='logged-user' /> 
-         <button class="dropdown-item" type="button">Dashboard</button>
-         <button className='btn btn-danger ms-3' onClick={logOut}>Log-out</button> 
+       <img className="UserImg" src={user.photoURL} alt="img" /> 
+         <button class="dropdown-item py-2 mt-1" >Dashboard</button>
+         <button className=' logout-btn' onClick={logOut}>Log-out</button> 
        </ul>
      </div>
            
