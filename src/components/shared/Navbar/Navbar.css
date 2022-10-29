@@ -183,8 +183,9 @@ border-radius: 5px;}
   width: 100%;
   border: 0;
   padding: 8px;
-  background-color: #DC3545;
-  color: white;
+  color: #DC3545;
+  background-color: white;
+  font-weight: 700;
 }
 .dash-btn{
   width: 100%;
@@ -193,4 +194,13 @@ border-radius: 5px;}
   color: #FF6752;
   background-color: white;
   font-weight: 700;
+}
+.user-name{
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 6px;
+  color: #FF6752;
+  background-color: white;
+
 }

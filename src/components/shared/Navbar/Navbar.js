@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Navbar.css'
 import { IoIosArrowDown } from "react-icons/io";
 import { FiSearch,FiLogOut } from "react-icons/fi";
@@ -10,11 +10,22 @@ import { FaUserCircle } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
 import useFirebase from '../../../hooks/useFirebase';
+import { useState } from 'react';
 const Navbar = () => {
+
+const [courses,setCourses] = useState([]);
+const [searchCourses,setSearchCourses] = useState("")
 const {signInUsingGoogle,user,logOut}=useFirebase();
-  const google=(e)=>{
-    signInUsingGoogle();
-  }
+ 
+    useEffect(()=>{
+      fetch('https://secure-sea-90788.herokuapp.com/all-popCourses')
+      .then(res=>res.json())
+      .then(data=> setCourses(data))
+  
+    },[])
+
+    const google=(e)=>{
+      signInUsingGoogle();}
   return (
     <div className='navbars'>
      <div className="container text-light px-0">  
@@ -71,10 +82,14 @@ const {signInUsingGoogle,user,logOut}=useFirebase();
          <Link to='/news-blogs'>Recent Blogs</Link>
          </div>
           </div>
+
           <div className="search">
           <FiSearch className='search-icon'/>
-            <input type="search" name="" id="" placeholder='Search Courses' />
+            <input onChange={(event)=>{
+       setSearchCourses(event.target.value)
+      }} type="search" name="" id="" placeholder='Search Courses' />
           </div>
+
           <div >
 {/* add authentication */}
         
@@ -84,14 +99,14 @@ const {signInUsingGoogle,user,logOut}=useFirebase();
         <>  
             
     <div class="dropdown">
-    <button class=" dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-    <span className='user-name'>{user.displayName} </span> 
+    <button class=" dropdown-toggle user-name" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+    <span className=''>{user.displayName} </span> 
     </button>
        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
         {user.photoURL ? <img className="UserImg" src={user.photoURL} alt="img" /> :
         <> <TiUserOutline  className="User"/> </> }
-         <button class="dash-btn" >Dashboard</button>
-         <button className=' logout-btn' onClick={logOut}>Log-out
+         <button class="dash-btn dropdown-item mt-1" >Dashboard</button>
+         <button className=' logout-btn dropdown-item' onClick={logOut}>Log-out
          <FiLogOut className='ms-2' /></button> 
        </ul>
      </div>
@@ -127,6 +142,29 @@ const {signInUsingGoogle,user,logOut}=useFirebase();
           </div>
           </div>
        </div>
+     </div>
+
+     <div>
+      {
+        courses && (
+         // eslint-disable-next-line array-callback-return
+         courses.filter((items)=>{
+          if(searchCourses === ""){
+            return items
+          }
+          else if(items?.title.toLowerCase().includes(searchCourses.toLowerCase()) ||
+          items?.class.toLowerCase().includes(searchCourses.toLowerCase()))
+          {
+            return items
+          }
+
+         }).map(data=>(
+          <><li>{data?.title}</li></>
+         ))
+
+        )
+      }
+    
      </div>
      {/* mobile device menu */}
       <div className='d-block d-lg-none fixed-top'>
