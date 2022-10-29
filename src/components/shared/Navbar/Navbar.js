@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Navbar.css'
 import { IoIosArrowDown } from "react-icons/io";
 import { FiSearch,FiLogOut } from "react-icons/fi";
@@ -10,7 +10,7 @@ import { FaUserCircle } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
 import useFirebase from '../../../hooks/useFirebase';
-import { useState } from 'react';
+
 const Navbar = () => {
 
   const {signInUsingGoogle,user,logOut}=useFirebase();
