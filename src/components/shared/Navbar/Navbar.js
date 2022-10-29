@@ -13,16 +13,16 @@ import useFirebase from '../../../hooks/useFirebase';
 import { useState } from 'react';
 const Navbar = () => {
 
-const [courses,setCourses] = useState([]);
-const [searchCourses,setSearchCourses] = useState("")
-const {signInUsingGoogle,user,logOut}=useFirebase();
+  const {signInUsingGoogle,user,logOut}=useFirebase();
+// const [courses,setCourses] = useState([]);
+// const [searchCourses,setSearchCourses] = useState("")
  
-    useEffect(()=>{
-      fetch('https://secure-sea-90788.herokuapp.com/all-popCourses')
-      .then(res=>res.json())
-      .then(data=> setCourses(data))
+//     useEffect(()=>{
+//       fetch('https://secure-sea-90788.herokuapp.com/all-popCourses')
+//       .then(res=>res.json())
+//       .then(data=> setCourses(data))
   
-    },[])
+//     },[])
 
     const google=(e)=>{
       signInUsingGoogle();}
@@ -85,9 +85,7 @@ const {signInUsingGoogle,user,logOut}=useFirebase();
 
           <div className="search">
           <FiSearch className='search-icon'/>
-            <input onChange={(event)=>{
-       setSearchCourses(event.target.value)
-      }} type="search" name="" id="" placeholder='Search Courses' />
+            <input type="search" name="" id="" placeholder='Search Courses' />
           </div>
 
           <div >
@@ -144,7 +142,7 @@ const {signInUsingGoogle,user,logOut}=useFirebase();
        </div>
      </div>
 
-     <div>
+     {/* <div>
       {
         courses && (
          // eslint-disable-next-line array-callback-return
@@ -165,7 +163,7 @@ const {signInUsingGoogle,user,logOut}=useFirebase();
         )
       }
     
-     </div>
+     </div> */}
      {/* mobile device menu */}
       <div className='d-block d-lg-none fixed-top'>
        <div className="d-flex justify-content-between align-items-center
