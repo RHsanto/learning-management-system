@@ -144,57 +144,15 @@ const Navbar = () => {
                   </>
                 )}
               </div>
-              <div>
-                <div type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <RiShoppingBagLine className="cart" />
-                </div>
-                <div
-                  class="modal fade"
-                  id="exampleModal"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-body text-dark">
-                        <h4> Authentication system is not connected yet. It will be added soon.</h4>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                          Close
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+   {/* cart section */}
+               <div>
+                <RiShoppingBagLine className="cart" />
+               </div>    
             </div>
           </div>
         </div>
 
-        {/* <div>
-      {
-        courses && (
-         // eslint-disable-next-line array-callback-return
-         courses.filter((items)=>{
-          if(searchCourses === ""){
-            return items
-          }
-          else if(items?.title.toLowerCase().includes(searchCourses.toLowerCase()) ||
-          items?.class.toLowerCase().includes(searchCourses.toLowerCase()))
-          {
-            return items
-          }
-
-         }).map(data=>(
-          <><li>{data?.title}</li></>
-         ))
-
-        )
-      }
-    
-     </div> */}
+   
         {/* mobile device menu */}
         <div className="d-block d-lg-none fixed-top">
           <div
