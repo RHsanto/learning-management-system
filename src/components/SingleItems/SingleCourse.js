@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import "./Single.css";
 import Man from "../../image/man-1.jpg";
-import { BsStarFill } from "react-icons/bs";
-import { BsStarHalf } from "react-icons/bs";
+import "./Single.css";
+import { useParams } from "react-router-dom";
+import { BsStarFill,BsStarHalf,BsCartPlusFill  } from "react-icons/bs";
 import { RiPlayCircleLine } from "react-icons/ri";
 import { TiUser } from "react-icons/ti";
 import { FcHome } from "react-icons/fc";
@@ -20,7 +19,7 @@ const SingleCourse = () => {
       .then(data => setCourses(data));
   }, [id]);
 
-  console.log(id.id);
+  // console.log(id.id);
   return (
     <div>
       <div className="container my-5">
@@ -100,7 +99,10 @@ const SingleCourse = () => {
                   Duration : 12h 20m 20s
                 </li>
               </div>
-              <button>Enroll Now</button>
+              <div className="d-flex justify-content-between px-2">
+              <button className="buy-btn">Buy Now</button>
+              <button className="add-btn"> <BsCartPlusFill className="fs-5 me-1"/> Add to cart</button>
+              </div>
             </div>
           </div>
         </div>

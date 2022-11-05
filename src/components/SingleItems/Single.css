@@ -1,11 +1,13 @@
-.img-box button, .single-info button{
+ button{
   border: 0;
   padding: 8px 20px;
   border-radius: 5px;
-  background-color: #274BFF;
   color: white;
-  margin-bottom: 20px;
   border: 1px solid;
+}
+.img-box button{
+  margin-bottom: 20px;
+  background-color: #274BFF;
 }
 .img-box img{
 width: 100%;
@@ -28,7 +30,19 @@ object-fit: cover;
   color: #274BFF;
   font-size: 20px;
 }
-.single-info button:hover{
- color: #274BFF;
- background: white;
+.buy-btn{
+ color: #0e69f1;
+ font-weight: 600;
+}
+.buy-btn:hover{
+  background-color: #0e69f1;
+  color:#ffff;
+}
+.add-btn{
+  background-color: #FFAD33;
+  font-weight: 600;
+}
+.add-btn:hover{
+  color: #FFAD33;
+  background-color: white;
 }
