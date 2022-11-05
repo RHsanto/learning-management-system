@@ -124,7 +124,7 @@ const Navbar = () => {
                           </>
                         )}
                         <button class="dash-btn dropdown-item mt-1">Dashboard</button>
-                        <button className=" logout-btn dropdown-item" onClick={logOut}>
+                        <button className=" text-danger dropdown-item" onClick={logOut}>
                           Log-out
                           <FiLogOut className="ms-2" />
                         </button>

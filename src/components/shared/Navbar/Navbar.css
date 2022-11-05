@@ -179,28 +179,13 @@ color: white;
 border: 0;
 border-radius: 5px;}
 
-.logout-btn{
-  width: 100%;
-  border: 0;
-  padding: 8px;
-  color: #DC3545;
-  background-color: white;
-  font-weight: 700;
-}
-.dash-btn{
-  width: 100%;
-  border: 0;
-  padding: 10px;
-  color: #FF6752;
-  background-color: white;
-  font-weight: 700;
-}
+
 .user-name{
   width: 100%;
   border: 0;
   border-radius: 5px;
   padding: 6px;
-  color: #FF6752;
-  background-color: white;
+  background-color: #f17161;
+  color: white;
 
 }
