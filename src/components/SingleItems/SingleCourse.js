@@ -14,7 +14,7 @@ const SingleCourse = () => {
 
   const [courses, setCourses] = useState([]);
   useEffect(() => {
-    fetch(`https://secure-sea-90788.herokuapp.com/all-popCourse/${id?.id}`)
+    fetch(`https://learning-management-server.onrender.com/all-popCourse/${id?.id}`)
       .then(res => res.json())
       .then(data => setCourses(data));
   }, [id]);

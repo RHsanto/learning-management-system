@@ -17,7 +17,7 @@ const Navbar = () => {
   // const [searchCourses,setSearchCourses] = useState("")
 
   //     useEffect(()=>{
-  //       fetch('https://secure-sea-90788.herokuapp.com/all-popCourses')
+  //       fetch('https://learning-management-server.onrender.com/all-popCourses')
   //       .then(res=>res.json())
   //       .then(data=> setCourses(data))
 
@@ -31,16 +31,6 @@ const Navbar = () => {
       <div className="container text-light px-0">
         <div className="d-none d-lg-block">
           <div className=" d-flex justify-content-between align-items-center py-3">
-            {/* <div >
-         <div className="dropdown">
-         <button className=" logo">Categories <IoIosArrowDown/></button>
-         <div className="dropdown-content ">
-         <Link to='/top-category'>Top Category </Link>
-         <Link to='/counter'>Counter Page </Link>
-         <Link to='/supporters'>Supporters Page </Link>
-         </div>
-          </div>
-         </div> */}
             <div>
               <h3>LOGO</h3>
             </div>
@@ -52,11 +42,7 @@ const Navbar = () => {
                 <button className="dropBtn">
                   Home <IoIosArrowDown />
                 </button>
-                <div className="dropdown-content">
-                  <Link to="/">Home 1</Link>
-                  <Link to="/">Home 2</Link>
-                  <Link to="/">Home 3</Link>
-                </div>
+
               </div>
               <div className="dropdown">
                 <button className="dropBtn">
@@ -102,7 +88,7 @@ const Navbar = () => {
               <div>
                 {/* add authentication */}
 
-                {user.email ? (
+                {user?.email ? (
                   <>
                     <div class="dropdown">
                       <button
@@ -112,11 +98,11 @@ const Navbar = () => {
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
-                        <span className="">{user.displayName} </span>
+                        <span className="">{user?.displayName} </span>
                       </button>
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        {user.photoURL ? (
-                          <img className="UserImg" src={user.photoURL} alt="img" />
+                        {user?.photoURL ? (
+                          <img className="UserImg" src={user?.photoURL} alt="img" />
                         ) : (
                           <>
                             {" "}
@@ -144,15 +130,14 @@ const Navbar = () => {
                   </>
                 )}
               </div>
-   {/* cart section */}
-               <div>
+              {/* cart section */}
+              <div>
                 <RiShoppingBagLine className="cart" />
-               </div>    
+              </div>
             </div>
           </div>
         </div>
 
-   
         {/* mobile device menu */}
         <div className="d-block d-lg-none fixed-top">
           <div

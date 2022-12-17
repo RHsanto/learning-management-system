@@ -5,7 +5,7 @@ import "./LatestBlog.css";
 const LatestNews = () => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
-    fetch("https://secure-sea-90788.herokuapp.com/all-blogs")
+    fetch("https://learning-management-server.onrender.com/all-blogs")
       .then(response => response.json())
       .then(data => setBlogs(data));
   }, []);

@@ -4,7 +4,7 @@ import { BsStarHalf } from "react-icons/bs";
 const AllReviews = () => {
   const [reviews,setReviews]=useState([])
   useEffect(()=>{
-    fetch('https://secure-sea-90788.herokuapp.com/all-Reviews')
+    fetch('https://learning-management-server.onrender.com/all-Reviews')
     .then(res=>res.json())
     .then(data=>setReviews(data))
   },[])

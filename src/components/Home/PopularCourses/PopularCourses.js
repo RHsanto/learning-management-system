@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 const PopularCourses = () => {
   const [courses, setCourses] = useState([]);
   useEffect(() => {
-    fetch("https://secure-sea-90788.herokuapp.com/all-popCourses")
+    fetch("https://learning-management-server.onrender.com/all-popCourses")
       .then(res => res.json())
       .then(data => setCourses(data));
   }, []);

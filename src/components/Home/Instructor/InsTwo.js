@@ -11,7 +11,7 @@ const InsTWo = () => {
 
   const [instructors,setInstructors]=useState([])
   useEffect(()=>{
-    fetch('https://secure-sea-90788.herokuapp.com/all-instructor')
+    fetch('https://learning-management-server.onrender.com/all-instructor')
     .then(res=>res.json())
     .then(data=>setInstructors(data))
   },[])
