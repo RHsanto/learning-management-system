@@ -81,7 +81,7 @@ a{
     border-radius: 50%;
   }
   .slick-next:before {
-    margin-left: -60px;
+    margin-left: -100px;
   }
 
   .our-keys{
@@ -110,14 +110,13 @@ a{
   }
  
   /* ================tablet mode=============== */
-  @media only screen and (min-width: 601PX) and (max-width: 768px){
+   @media only screen and (min-width: 601PX) and (max-width: 768px){
     .banner-info h1{
       font-size: 46px;
       }
       .slick-prev:before{
-        margin-left:550px;
-        padding:15px 10px;
-        border-radius: 50%;
+        position: absolute;
+        right: -600px;
       }
       .text-1{
         left: 5%;
@@ -150,4 +149,4 @@ a{
       width: 250px !important;
      
     }
-  } 
+  }  
