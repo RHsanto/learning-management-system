@@ -6,6 +6,10 @@ a{
   text-decoration: none;
   color: white;
 }
+
+.text:hover{
+  color: #ffffff;
+}
 /* hover css on button */
 .all-courses{
   color: #fff;

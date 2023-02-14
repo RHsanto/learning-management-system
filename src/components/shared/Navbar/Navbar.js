@@ -13,36 +13,29 @@ import useFirebase from "../../../hooks/useFirebase";
 
 const Navbar = () => {
   const { signInUsingGoogle, user, logOut } = useFirebase();
-  // const [courses,setCourses] = useState([]);
-  // const [searchCourses,setSearchCourses] = useState("")
-
-  //     useEffect(()=>{
-  //       fetch('https://learning-management-server.onrender.com/all-popCourses')
-  //       .then(res=>res.json())
-  //       .then(data=> setCourses(data))
-
-  //     },[])
 
   const google = e => {
     signInUsingGoogle();
   };
   return (
-    <div className="navbars">
+    <div className="navbars py-2">
       <div className="container text-light px-0">
         <div className="d-none d-lg-block">
           <div className=" d-flex justify-content-between align-items-center py-3">
             <div>
-              <h3>LOGO</h3>
+              <h3>
+                <Link className="text" to="/">Bright Zone</Link>
+              </h3>
             </div>
             <div
               className="dropdownMenu d-flex
            justify-content-center align-items-center gap-4"
             >
               <div className="dropdown">
-                <button className="dropBtn">
-                  Home <IoIosArrowDown />
-                </button>
-
+                <div>
+                 
+                  <Link className="text" to="/"> Home </Link>
+                </div>
               </div>
               <div className="dropdown">
                 <button className="dropBtn">
